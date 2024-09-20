@@ -10,7 +10,7 @@ function Header() {
       <nav>
         <ul>
           <li>
-              Accueille
+              Accueil
           </li>
         </ul>
       </nav>
