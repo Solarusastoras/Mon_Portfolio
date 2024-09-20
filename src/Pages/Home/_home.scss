@@ -1,0 +1,15 @@
+// Importation des bases
+@import "base/base";
+@import "base/colors";
+@import "base/fonts";
+
+// Importation des composants
+
+
+// Importation des layouts
+@import "../../Composants/Header/header";
+@import "../../Composants/Footer/footer";
+
+
+// Importation pages
+@import "../../Pages/Home/home";
