@@ -7,7 +7,13 @@ function Footer() {
   return (
     <footer>
       <div>
-        <p>c est moi</p>
+        <a
+          href="https://www.linkedin.com/in/michaeldulou/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Mon LinkedIn
+        </a>
       </div>
     </footer>
   );

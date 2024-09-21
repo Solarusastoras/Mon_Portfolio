@@ -12,9 +12,7 @@ root.render(
   <React.StrictMode>
     <Router>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <Home/>
       <Footer />
     </Router>
   </React.StrictMode>
