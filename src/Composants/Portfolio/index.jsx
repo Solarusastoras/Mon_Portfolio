@@ -42,9 +42,9 @@ function Portfolio() {
           </button>
         ))}
       </div>
-      <div className="projets">
+      <div>
         {filteredProjects.map((project) => (
-          <div key={project.id} className="project">
+          <div key={project.id}>
             <p>{project.title}</p>
             <Link to="/projets">
               <img src={project.cover} alt={project.title} />
