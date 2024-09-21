@@ -59,7 +59,7 @@
     "cover": "",
     "pictures": "",
     "description": "Site de Photographe",
-    "type": "Site statique",
+    "type": "SEO",
     "tags": ["SEO"]
   },
   {
@@ -68,7 +68,7 @@
     "cover": "",
     "pictures": "",
     "description": "Site dorganisation d'evenement",
-    "type": "Site dynamique",
+    "type": "Debug",
     "tags": ["Debug"]
   }
 ]
