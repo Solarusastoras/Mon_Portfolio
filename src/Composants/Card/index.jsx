@@ -1,16 +1,23 @@
+// src/Composants/Card/index.jsx
 import React from "react";
-import "./_card.scss"; // Assurez-vous d'avoir un fichier SCSS pour les styles de la carte
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import "./_card.scss";
 
-function Card({ project }) {
+const Card = ({ project }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    localStorage.setItem("clickedId", project.id);
+    console.log(`ID cliqué stocké: ${localStorage.getItem("clickedId")}`);
+    navigate(`/projets`);
+  };
+
   return (
-    <Link to="/projets">
-      <div className="card">
-        <p className="card-title">{project.title}</p>
-        <img className="card-image" src={project.cover} alt={project.title} />
-      </div>
-    </Link>
+    <div className="card" onClick={handleClick}>
+      <img src={project.cover} alt={project.title} className="card-cover" />
+      <h2 className="card-title">{project.title}</h2>
+    </div>
   );
-}
+};
 
 export default Card;

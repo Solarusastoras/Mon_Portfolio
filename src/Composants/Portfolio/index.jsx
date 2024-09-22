@@ -4,7 +4,6 @@ import "../../Utils/SASS/base/_colors.scss";
 import "../../Utils/SASS/base/_fonts.scss";
 import projets from "../../Data/Projets.json";
 import Card from "../../Composants/Card";
-import { Link } from "react-router-dom"; // Ajout de l'importation de Link
 
 function Portfolio() {
   const [filteredProjects, setFilteredProjects] = useState(projets);
@@ -17,6 +16,10 @@ function Portfolio() {
     } else {
       setFilteredProjects(projets.filter((project) => project.type === filter));
     }
+  };
+
+  const handleProjectClick = (id) => {
+    localStorage.setItem("selectedProjectId", id);
   };
 
   const uniqueTypes = [
@@ -43,7 +46,9 @@ function Portfolio() {
       </div>
       <div className="grid_projets">
         {filteredProjects.map((project) => (
-          <Card key={project.id} project={project} />
+          <div key={project.id} onClick={() => handleProjectClick(project.id)}>
+            <Card project={project} />
+          </div>
         ))}
       </div>
     </div>

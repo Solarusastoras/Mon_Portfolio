@@ -2,12 +2,12 @@
   {
     "id": "2",
     "title": "Riding Cities",
-    "cover": "./src/Utils/Images/Site/riding_cities.png",
-    "pictures": "src/Utils/Images/Site/riding_cities.png",
+    "cover": " ../public/Site/riding_cities.png",
+    "pictures": " ../public/Site/riding_cities.png",
     "description": "Site web d une association de Rider",
     "type": "Site statique",
-    "tags": ["HTML", "CSS"],
-    "github":"https://github.com/Solarusastoras/Projet-2.git",
+    "tags": ["HTML, CSS"],
+    "github": "https://github.com/Solarusastoras/Projet-2.git",
     "gitpage": "https://solarusastoras.github.io/Projet-2/"
   },
   {
@@ -17,7 +17,7 @@
     "pictures": "",
     "description": "Site web d'hebergement",
     "type": "Site statique",
-    "tags": ["HTML", "CSS"],
+    "tags": ["HTML, CSS (animation)"],
     "github":"https://github.com/Solarusastoras/Projet-3---Booki.git",
     "gitpage": "https://solarusastoras.github.io/Projet-3---Booki/"
   },
@@ -28,7 +28,7 @@
     "pictures": "",
     "description": "Site web livraison de repas",
     "type": "Site statique",
-    "tags": ["HTML", "CSS, SASS"],
+    "tags": ["HTML, SASS"],
     "github": "https://github.com/Solarusastoras/Projet-4-.git",
     "gitpage": "https://solarusastoras.github.io/Projet-4-/"
   },
@@ -39,7 +39,7 @@
     "pictures": "",
     "description": "Site web d'impression",
     "type": "Site statique",
-    "tags": ["HTML", "CSS, JS"],
+    "tags": ["JS"],
     "github": "https://github.com/Solarusastoras/Projet_5.git",
     "gitpage": "https://solarusastoras.github.io/Projet_5/"
   },
@@ -50,7 +50,7 @@
     "pictures": "",
     "description": "Portfolio d'une architecte",
     "type": "Site dynamique",
-    "tags": ["HTML", "CSS, JS"],
+    "tags": ["HTML, CSS, JS"],
     "github": "https://github.com/Solarusastoras/Projet_6.git",
     "gitpage": "https://solarusastoras.github.io/Projet_6/"
   },
@@ -61,7 +61,7 @@
     "pictures": "",
     "description": "Location de logement",
     "type": "Site dynamique",
-    "tags": ["React"],
+    "tags": ["SCSS, JS, React"],
     "github": "https://github.com/Solarusastoras/Projet_7.git",
     "gitpage": "https://solarusastoras.github.io/Projet_7/"
   },

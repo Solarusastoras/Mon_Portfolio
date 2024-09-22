@@ -3,12 +3,11 @@ import { Link } from "react-router-dom";
 import "../../Utils/SASS/base/_colors.scss";
 import "../../Utils/SASS/base/_fonts.scss";
 import "./_header.scss";
-import LogoAccueil from "../../Utils/Images/Logo/accueil.png";
-import LogoPortofolio from "../../Utils/Images/Logo/dossier-portfolio.png";
-import LogoPrestation from "../../Utils/Images/Logo/service-mondial.png";
-import LogoAPropos from "../../Utils/Images/Logo/carte-didentite.png";
-import LogoContact from "../../Utils/Images/Logo/contacts-google.png";
-import LogoLinkedin from "../../Utils/Images/Logo/linkedin.png";
+import LogoAccueil from "../../Utils/Images/Logo/accueil.webp";
+import LogoPortofolio from "../../Utils/Images/Logo/dossier-portfolio.webp";
+import LogoAPropos from "../../Utils/Images/Logo/carte-didentite.webp";
+import LogoContact from "../../Utils/Images/Logo/contacts-google.webp";
+
 
 function Header() {
   return (
