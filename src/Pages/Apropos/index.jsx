@@ -1,20 +1,18 @@
 import React from "react";
-import "../../Utils/SASS/base/_colors.scss";
-import "../../Utils/SASS/base/_fonts.scss";
+import "./_apropos.scss";
+
 
 
 const Apropos = () => {
   return (
-    <div>
-      <h1>A propos</h1>
-      <div>
+    <div className="apropos-container">
+      <h1 className="apropos-title">À propos</h1>
+      <div className="apropos-content">
         <p>
           Je suis un développeur web junior, passionné par le développement web
-          et mobile. J'ai suivi une formation de développeur web et web mobile à
+          et mobile. J'ai suivi une formation de développeur Front-End à
           Openclassroom. J'ai appris à développer des applications web et
-          mobiles en utilisant les technologies les plus récentes. Je suis à la
-          recherche d'un stage ou d'un emploi en tant que développeur web ou web
-          mobile.
+          mobiles en utilisant les technologies les plus récentes telque HTML5, CSS5, JS, React.
         </p>
       </div>
     </div>

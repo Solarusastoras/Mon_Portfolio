@@ -1,0 +1,58 @@
+.title_portfolio {
+  text-align: center;
+  margin-bottom: 20px;
+  animation: jump 0.5s ease-in-out infinite;
+}
+
+@keyframes jump {
+  0%, 100% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-1px);
+  }
+}
+
+.title_char {
+  display: inline-block;
+  animation: jump 0.5s ease-in-out infinite;
+}
+
+.conteneur-portfolio {
+  border: 2px solid #d4af37;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 2%; 
+  max-width: 1200px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.filtres {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filtres button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.filtres button.active,
+.filtres button:hover {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+.grid_projets {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}

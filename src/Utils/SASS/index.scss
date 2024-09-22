@@ -11,10 +11,12 @@
 @import "../../Composants/Footer/footer";
 @import "../../Composants/Form/form";
 @import "../../Composants/Portfolio/portfolio";
-@import "../../Composants/Presentation/presentation";
-@import "../../Composants/Prestation/prestation";
+
 @import "../../Composants/Titre/titre";
 
 
 // Importation pages
 @import "../../Pages/Home/home";
+@import "../../Pages/Apropos/apropos";
+@import "../../Pages/Error/error";
+@import "../../Pages/Projets/projets";

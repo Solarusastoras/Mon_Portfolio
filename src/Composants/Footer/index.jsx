@@ -2,6 +2,7 @@ import React from "react";
 import "./_footer.scss";
 import "../../Utils/SASS/base/_colors.scss";
 import "../../Utils/SASS/base/_fonts.scss";
+import LogoLinkedin from "../../Utils/Images/Logo/linkedin.png";
 
 function Footer() {
   return (
@@ -15,6 +16,7 @@ function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
+          <img src={LogoLinkedin} alt="Logo de LinkedIn" />
           Mon LinkedIn
         </a>
       </div>

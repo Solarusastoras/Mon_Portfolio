@@ -1,3 +1,32 @@
-body {
-    margin: 0;
+
+
+footer {
+  background-color: #343a40;
+  color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #d4af37;
+  margin-top: 50px;
+}
+
+footer div {
+  margin-bottom: 2px;
+}
+
+footer a {
+  color: #e6b401;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a:hover {
+  color: #b8860b;
+}
+
+footer img {
+  width: 16px;
+  height: 16px; 
+  margin-right: 5px;
 }

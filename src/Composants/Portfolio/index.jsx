@@ -1,19 +1,18 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "./_portfolio.scss";
 import "../../Utils/SASS/base/_colors.scss";
 import "../../Utils/SASS/base/_fonts.scss";
 import projets from "../../Data/Projets.json";
-
-
+import Card from "../../Composants/Card";
+import { Link } from "react-router-dom"; // Ajout de l'importation de Link
 
 function Portfolio() {
   const [filteredProjects, setFilteredProjects] = useState(projets);
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [activeFilter, setActiveFilter] = useState("Tous");
 
   const handleFilterChange = (filter) => {
     setActiveFilter(filter);
-    if (filter === "All") {
+    if (filter === "Tous") {
       setFilteredProjects(projets);
     } else {
       setFilteredProjects(projets.filter((project) => project.type === filter));
@@ -21,7 +20,7 @@ function Portfolio() {
   };
 
   const uniqueTypes = [
-    "All",
+    "Tous",
     "Site statique",
     "Site dynamique",
     "SEO",
@@ -29,9 +28,9 @@ function Portfolio() {
   ];
 
   return (
-    <div>
-      <h2>Mon Portfolio</h2>
-      <div className="filters">
+    <div className="conteneur-portfolio">
+      <h3 className="title_portfolio">MON PORTFOLIO</h3>
+      <div className="filtres">
         {uniqueTypes.map((type) => (
           <button
             key={type}
@@ -42,15 +41,9 @@ function Portfolio() {
           </button>
         ))}
       </div>
-      <div>
+      <div className="grid_projets">
         {filteredProjects.map((project) => (
-          <div key={project.id}>
-            <p>{project.title}</p>
-            <Link to="/projets">
-              <img src={project.cover} alt={project.title} />
-            </Link>
-            <p>{project.description}</p>
-          </div>
+          <Card key={project.id} project={project} />
         ))}
       </div>
     </div>

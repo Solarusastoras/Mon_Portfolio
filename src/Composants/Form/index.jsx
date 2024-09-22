@@ -5,9 +5,11 @@ import "../../Utils/SASS/base/_fonts.scss";
 
 function Form() {
   return (
-    <div>
-      <h2>Une question ? Une demande de devis ?</h2>
-      <p>N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
+    <div className="conteneur-formulaire">
+      <div className="cadre-texte">
+        <h3>Une question ? Une demande de devis ?</h3>
+        <p>N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
+      </div>
       <form action="#" method="post">
         <label htmlFor="nom">Nom</label>
         <input type="text" name="nom" id="nom" autoComplete="name" />

@@ -1,7 +1,23 @@
+// Coleur
 $base-color: #ffffff;
 $secondary-color: #000000;
-$third-color: #ffff;
+$third-color: #c98312;
 $fourth-color: #ffff;
 $fiveth-color: #fff;
 
+
+
 // colors
+
+
+
+
+
+h1 {
+  color: $third-color;
+}
+
+ nav, footer, a, header {
+  color: $base-color;
+  text-decoration: none;
+}
