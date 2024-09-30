@@ -26,27 +26,54 @@ const Projets = () => {
   }
 
   return (
-    <div className="projet-details">
-      <h1 className="projet-title">{clickedProjet.title}</h1>
+    <div className="conteneur-projet">
+      <h1 className="titre-projet">{clickedProjet.title}</h1>
       <img
-        src={clickedProjet.picture}
-        alt={clickedProjet.title}
         className="projet-cover"
+        src={clickedProjet.pictures}
+        alt={clickedProjet.title}
       />
-      <h3>Description</h3>
-      <p className="projet-description">{clickedProjet.description}</p>
-      <h3>Github</h3>
-      <p>Lien du code source du site cliqué</p>
-      <a href={clickedProjet.git} className="projet-git">
-        GitHub
-      </a>
-      <h3>GitPage</h3>
-      <p>Cliquer droit de la souris pour ouvrir le site cliqué</p>
-      <a href={clickedProjet.gitpage} className="projet-gitpage">
-        Git page
-      </a>
-      <h3>Langages Utilisés</h3>
-      <p className="projet-tag">{clickedProjet.tags}</p>
+      <div className="cards_projet">
+        <div className="card_descrip">
+          <h3>Description</h3>
+          <p className="projet-description">{clickedProjet.description}</p>
+        </div>
+        <div className="card_langage">
+          <h3>Langages utilisés</h3>
+          <div className="projet-tags">
+            {clickedProjet.tags.map((tags, index) => (
+              <div
+                key={index}
+                className="projet-tag"
+                data-definition={tags.definition}
+              >
+                <img src={tags.logo} alt={tags.alt} className="tag-logo" />
+                <span className="tag-name">{tags.name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className="projet-git">
+        <div className="card">
+          <h3>Lien vers la repo du site github</h3>
+          <div
+            className="projet-git-button"
+            onClick={() => window.open(clickedProjet.github, "_blank")}
+          >
+            GitHub
+          </div>
+        </div>
+        <div className="card">
+          <h3>Ouverture du site</h3>
+          <div
+            className="projet-git-button"
+            onClick={() => window.open(clickedProjet.gitpage, "_blank")}
+          >
+            GitPage
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

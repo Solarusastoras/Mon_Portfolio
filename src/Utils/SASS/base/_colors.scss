@@ -9,15 +9,11 @@ $fiveth-color: #fff;
 
 // colors
 
-
-
-
-
 h1 {
   color: $third-color;
 }
 
- nav, footer, a, header {
+ nav, footer, header a, header {
   color: $base-color;
   text-decoration: none;
 }

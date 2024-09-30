@@ -1,54 +1,211 @@
+/* src/Pages/Projets/_projets.scss */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .conteneur-projet {
-  max-width: 800px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 .titre-projet {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #333;
+  color: #000;
+  z-index: 7;
+  width: 100%;
 }
 
-.image-projet {
-  width: 100%;
+.projet-cover {
+  width: 80%;
   height: auto;
   border-radius: 10px;
   margin-bottom: 20px;
 }
 
-.tags-projet {
+.cards_projet {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card_descrip, .card_langage {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 48%; /* Ajustez la largeur pour qu'ils prennent toute la largeur ensemble */
+}
+
+.projet-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 20px;
 }
 
-.tag-projet {
-  background-color: #f0f0f0;
+.projet-tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrer horizontalement */
+  justify-content: center; /* Centrer verticalement */
+  gap: 5px;
   padding: 5px 10px;
+  border: 2px solid transparent;
   border-radius: 5px;
-  font-size: 1rem;
-  color: #333;
+  position: relative;
+  overflow: hidden;
+  background-image: url('../../Utils/Images/Img/img1.jpg');
+  color: #ffffff;
+  cursor: pointer;
 }
 
-.liens-projet {
+.projet-tag::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid orange;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.projet-tag::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: orange;
+  border-radius: 50%;
+  box-shadow: 0 0 10px orange;
+  animation: border-dot-animation 9s linear infinite;
+}
+
+@keyframes border-dot-animation {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 100%;
+    transform: translateX(-100%);
+  }
+  50% {
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+  }
+  75% {
+    top: 100%;
+    left: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+.tag-logo {
+  width: 30px;
+  height: 30px;
+  object-fit: contain; /* Maintenir les proportions de l'image */
+}
+
+.tag-name {
+  font-size: 14px;
   text-align: center;
 }
 
-.lien-projet {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s;
+.projet-git {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
 }
 
-.lien-projet:hover {
-  background-color: #0056b3;
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 48%; /* Ajustez la largeur pour qu'ils prennent toute la largeur ensemble */
+}
+
+.projet-git-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #acacac;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.projet-git-button:hover {
+  color: #fff;
+  background-color: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.projet-git-button:active {
+  background-color: #e0e0e0;
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .projet_ligne {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projet-cover {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .cards_projet {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card_descrip, .card_langage, .card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .projet-git {
+    flex-direction: column;
+    align-items: center;
+  }
 }
