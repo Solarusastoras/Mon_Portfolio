@@ -1,4 +1,4 @@
-// src/Composants/Card/index.jsx
+
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./_card.scss";

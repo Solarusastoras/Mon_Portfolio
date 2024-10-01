@@ -11,7 +11,9 @@ function Home() {
   return (
     <div>
       <Titre />
-      <Portfolio />
+      <div className="center">
+        <Portfolio />
+      </div>
       <Form />
     </div>
   );

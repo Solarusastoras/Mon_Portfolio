@@ -1,7 +1,13 @@
 .title_portfolio {
   text-align: center;
   margin-bottom: 20px;
+  color: #fffdfd;
+  z-index: 7;
+  display: inline-block;
   animation: jump 0.5s ease-in-out infinite;
+}
+.conteneur-titre {
+  text-align: center;
 }
 
 @keyframes jump {
@@ -19,14 +25,16 @@
 }
 
 .conteneur-portfolio {
-  border: 2px solid #d4af37;
+  border: 5px solid #0000008a;
   border-radius: 15px;
   padding: 20px;
   margin: 2%; 
   max-width: 1200px;
-  background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
+  background: linear-gradient(to bottom, #28844bc0, #452884);
+  box-sizing: border-box;
+  width: 100vw;
 }
 
 .filtres {
@@ -52,7 +60,7 @@
 
 .grid_projets {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(4, 1fr); 
   gap: 20px;
   padding: 20px;
 }

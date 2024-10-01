@@ -1,6 +1,15 @@
 .card-cover {
   width: 100%;
-  height: auto;
+  height:70%;
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
 }

@@ -55,7 +55,7 @@ const Projets = () => {
         </div>
       </div>
       <div className="projet-git">
-        <div className="card">
+        <div className="cards">
           <h3>Lien vers la repo du site github</h3>
           <div
             className="projet-git-button"

@@ -1,24 +1,24 @@
-
-
 .conteneur-formulaire {
-  //background: url('path/to/parchment-texture.jpg') no-repeat center center;
   background-size: cover;
-  border: 2px solid #d4af37; // Couleur dorée pour les bordures
+  border: 2px solid #000000;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1), 
+              inset 0 -4px 8px rgba(255, 255, 255, 0.7); 
   max-width: 600px;
   margin: 0 auto;
-  font-family: 'Times New Roman', Times, serif; // Police de caractère pour un effet parchemin
-  color: #333;
+  color: #000000;
+  background-image: url("../../Utils/Images/Img/papyrus.jpg");
+  padding: 20px;
 }
 
 .cadre-texte {
-  border: 2px solid #d4af37; // Couleur dorée pour le cadre
+  border: 2px solid #d4af37;
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 20px;
-  background-color: rgba(255, 255, 255, 0.8); // Fond semi-transparent pour le cadre
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1), 
+              inset 0 -4px 8px rgba(255, 255, 255, 0.7); 
 }
 
 .conteneur-formulaire h3 {
@@ -43,26 +43,73 @@
   font-weight: bold;
 }
 
+.conteneur-formulaire textarea,
 .conteneur-formulaire input[type="text"],
-.conteneur-formulaire input[type="email"],
-.conteneur-formulaire textarea {
+.conteneur-formulaire input[type="email"] {
   margin-bottom: 15px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-family: 'Times New Roman', Times, serif;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.conteneur-formulaire .submit-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
 }
 
 .conteneur-formulaire input[type="submit"] {
-  background-color: #d4af37; // Couleur dorée pour le bouton
-  color: #fff;
+  background-color: #ff2600;
+  color: #ffffff;
+  font-weight: bolder;
   border: none;
   border-radius: 5px;
   padding: 10px;
+  width: 150px;
   cursor: pointer;
   transition: background-color 0.3s;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.conteneur-formulaire input[type="submit"].valid-submit {
+  background-color: #28a745;
+  color: #ffffff;
 }
 
 .conteneur-formulaire input[type="submit"]:hover {
-  background-color: #b8860b; // Couleur dorée foncée pour le survol
+  background-color: #b8860b;
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+}
+
+.confirmation-message {
+  color: green;
+  margin-top: 5px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cadre-texte {
+  cursor: default;
+}
+
+.invalid {
+  background: repeating-linear-gradient(
+    145deg,
+    #c72828,
+    #c72828 10px,
+    #ffffff 10px,
+    #ffffff 20px
+  );
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }

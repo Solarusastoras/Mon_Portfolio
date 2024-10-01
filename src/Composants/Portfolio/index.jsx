@@ -32,7 +32,9 @@ function Portfolio() {
 
   return (
     <div className="conteneur-portfolio">
-      <h3 className="title_portfolio">MON PORTFOLIO</h3>
+      <div className="conteneur-titre">
+        <h3 className="title_portfolio">MON PORTFOLIO</h3>
+      </div>
       <div className="filtres">
         {uniqueTypes.map((type) => (
           <button

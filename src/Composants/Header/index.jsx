@@ -1,3 +1,4 @@
+// src/Pages/Projets/index.jsx
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../Utils/SASS/base/_colors.scss";
@@ -8,16 +9,15 @@ import LogoPortofolio from "../../Utils/Images/Logo/dossier-portfolio.webp";
 import LogoAPropos from "../../Utils/Images/Logo/carte-didentite.webp";
 import LogoContact from "../../Utils/Images/Logo/contacts-google.webp";
 
-
 function Header() {
   return (
     <header className="header">
-      <h4>
+      <div className="identite_position">
         MICHAEL
         <br />
         <br />
         <span className="centered-text">DULOU</span>
-      </h4>
+      </div>
 
       <h2 className="header_poste">
         Développeur
