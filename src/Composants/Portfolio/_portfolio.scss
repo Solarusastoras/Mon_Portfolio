@@ -46,3 +46,22 @@
   gap: 20px;
   padding: 20px;
 }
+
+@media (max-width: 768px) {
+  .grid_projets {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .filtres {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .filtres button {
+    display: none;
+  }
+
+}

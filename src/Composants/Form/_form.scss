@@ -88,3 +88,10 @@ label {
 .cadre-texte {
   cursor: default;
 }
+
+@media (max-width: 768px) {
+  .conteneur-formulaire {
+    width: 90%;
+    
+  }
+}

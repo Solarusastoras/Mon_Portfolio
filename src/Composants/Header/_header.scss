@@ -55,3 +55,46 @@ li {
 .pointer-cursor {
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+    margin-top: -10px;
+  }
+
+ .identite_position {
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 900;
+}
+
+
+.header_nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.header_nav li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: transparent;
+}
+
+.header_nav img {
+  width: 30px; 
+  height: 30px; 
+  margin-bottom: 5px; 
+  margin-top: 135px;
+}
+}
