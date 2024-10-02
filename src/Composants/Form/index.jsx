@@ -59,8 +59,10 @@ function Form() {
 
   return (
     <div className="conteneur-formulaire">
+      <h3>Contact</h3>
+      <br />
       <div className="cadre-texte">
-        <h3>Une question ? Une demande de devis ?</h3>
+        <p>Une question ? Une demande de devis ?</p>
         <p>
           N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
         </p>

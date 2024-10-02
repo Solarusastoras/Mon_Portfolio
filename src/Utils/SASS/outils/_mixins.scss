@@ -1,3 +1,5 @@
+// Page
+// Page Home
 h2 {
   line-height: 0.7em;
   outline: none;
@@ -22,3 +24,20 @@ h2 {
   }
 }
 
+
+
+// Composants
+// Portfolio
+
+.title_portfolio {
+  animation: jump 0.5s ease-in-out infinite;
+}
+
+@keyframes jump {
+  0%, 100% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-1px);
+  }
+}

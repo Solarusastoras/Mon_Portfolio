@@ -1,4 +1,3 @@
-/* src/Pages/Projets/_projets.scss */
 
 * {
   margin: 0;
@@ -17,7 +16,6 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
@@ -27,7 +25,6 @@ body {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #000;
   z-index: 7;
   width: 100%;
 }
@@ -46,13 +43,12 @@ body {
 }
 
 .card_descrip, .card_langage {
-  background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 48%; /* Ajustez la largeur pour qu'ils prennent toute la largeur ensemble */
+  width: 48%; 
 }
 
 .projet-tags {
@@ -65,8 +61,8 @@ body {
 .projet-tag {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centrer horizontalement */
-  justify-content: center; /* Centrer verticalement */
+  align-items: center; 
+  justify-content: center;
   gap: 5px;
   padding: 5px 10px;
   border: 2px solid transparent;
@@ -74,7 +70,6 @@ body {
   position: relative;
   overflow: hidden;
   background-image: url('../../Utils/Images/Img/img1.jpg');
-  color: #ffffff;
   cursor: pointer;
 }
 
@@ -95,7 +90,6 @@ body {
   position: absolute;
   width: 5px;
   height: 5px;
-  background-color: orange;
   border-radius: 50%;
   box-shadow: 0 0 10px orange;
   animation: border-dot-animation 9s linear infinite;
@@ -130,7 +124,7 @@ body {
 .tag-logo {
   width: 30px;
   height: 30px;
-  object-fit: contain; /* Maintenir les proportions de l'image */
+  object-fit: contain; 
 }
 
 .tag-name {
@@ -146,13 +140,12 @@ body {
 }
 
 .cards {
-  background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 48%; /* Ajustez la largeur pour qu'ils prennent toute la largeur ensemble */
+  width: 48%; 
 }
 
 .projet-git-button {

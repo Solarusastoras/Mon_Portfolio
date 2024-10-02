@@ -2,21 +2,22 @@
   max-width: 580px;
   margin: 0 auto;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
 }
 
 .apropos-title {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .apropos-content {
+  padding: 20px;
   font-size: 1.2rem;
+  font-weight: bold;
   line-height: 1.6;
   animation: fadeIn 2s ease-in-out;
+  border-radius: 10px;
 }
 
 @keyframes fadeIn {
@@ -26,4 +27,10 @@
   to {
     opacity: 1;
   }
+}
+
+.apropos-lien {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }

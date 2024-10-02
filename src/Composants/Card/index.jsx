@@ -2,6 +2,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./_card.scss";
+import "../../Utils/SASS/base/_colors.scss";
 
 const Card = ({ project }) => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ const Card = ({ project }) => {
   return (
     <div className="card" onClick={handleClick}>
       <img src={project.cover} alt={project.title} className="card-cover" />
-      <h2 className="card-title">{project.title}</h2>
+      <h3 className="card-title">{project.title}</h3>
     </div>
   );
 };

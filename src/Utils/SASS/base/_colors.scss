@@ -1,19 +1,148 @@
-// Coleur
+// Couleurs
 $base-color: #ffffff;
 $secondary-color: #000000;
 $third-color: #c98312;
 $fourth-color: #ffff;
 $fiveth-color: #fff;
+$highlight-color: #e6b401;
+$highlight-hover-color: #b8860b;
+$background-dark: #343a40;
+$background-light: #ffffff8a;
+$error-color: #c72828;
+$success-color: #28a745;
+$warning-color: #ff2600;
+$confirmation-color: green;
 
-
-
-// colors
-
-h1 {
-  color: $third-color;
+// Mixins
+@mixin text-color($color) {
+  color: $color;
 }
 
- nav, footer, header a, header {
-  color: $base-color;
+@mixin background-color($color) {
+  background-color: $color;
+}
+
+// Page Home
+h1 {
+  @include text-color($third-color);
+}
+
+nav, footer, header a, header {
+  @include text-color($base-color);
   text-decoration: none;
+}
+
+// Page Projets
+.conteneur-projet,
+.card_descrip,
+.card_langage,
+.cards,
+.projet-git-button {
+  @include background-color($base-color);
+}
+
+.titre-projet,
+.projet-git-button {
+  @include text-color($secondary-color);
+}
+
+.projet-tag {
+  @include text-color($base-color);
+}
+
+.projet-tag::after {
+  @include background-color(orange);
+}
+
+.projet-git-button:hover {
+  @include text-color($base-color);
+}
+
+.projet-git-button:active {
+  @include background-color(#e0e0e0);
+}
+
+// Page A Propos
+.apropos-content {
+  @include background-color(antiquewhite);
+}
+
+// Composants
+
+// Portfolio
+.title_portfolio {
+  @include text-color(#fffdfd);
+}
+
+.conteneur-portfolio {
+  background: linear-gradient(to bottom, #28844bc0, #452884);
+}
+
+.filtres {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filtres button.active,
+.filtres button:hover {
+  @include background-color($background-dark);
+  @include text-color($base-color);
+}
+
+// Form
+.conteneur-formulaire {
+  @include text-color($secondary-color);
+}
+
+.conteneur-formulaire input[type="submit"] {
+  @include background-color($warning-color);
+  @include text-color($base-color);
+}
+
+.conteneur-formulaire input[type="submit"].valid-submit {
+  @include background-color($success-color);
+  @include text-color($base-color);
+}
+
+.error-message, .text_eror {
+  @include text-color(red);
+}
+
+.confirmation-message {
+  @include text-color($confirmation-color);
+}
+
+.invalid {
+  background: repeating-linear-gradient(
+    145deg,
+    $error-color,
+    $error-color 25px,
+    $base-color 20px,
+    $base-color 40px
+  );
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+// Footer
+footer {
+  @include background-color($background-dark);
+  @include text-color($base-color);
+}
+
+footer a {
+  @include text-color($highlight-color);
+}
+
+footer a:hover {
+  @include text-color($highlight-hover-color);
+}
+
+// Card
+.card {
+  @include background-color($background-light);
+}
+
+.card-title {
+  @include text-color($secondary-color);
 }

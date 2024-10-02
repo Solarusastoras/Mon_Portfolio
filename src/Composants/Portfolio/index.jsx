@@ -4,6 +4,9 @@ import "../../Utils/SASS/base/_colors.scss";
 import "../../Utils/SASS/base/_fonts.scss";
 import projets from "../../Data/Projets.json";
 import Card from "../../Composants/Card";
+import "../../Utils/SASS/base/_colors.scss";
+import "../../Utils/SASS/outils/_mixins.scss";
+
 
 function Portfolio() {
   const [filteredProjects, setFilteredProjects] = useState(projets);
@@ -33,7 +36,7 @@ function Portfolio() {
   return (
     <div className="conteneur-portfolio">
       <div className="conteneur-titre">
-        <h3 className="title_portfolio">MON PORTFOLIO</h3>
+        <h3 className="title_portfolio">PORTFOLIO</h3>
       </div>
       <div className="filtres">
         {uniqueTypes.map((type) => (

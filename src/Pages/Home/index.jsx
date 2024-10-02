@@ -11,10 +11,12 @@ function Home() {
   return (
     <div>
       <Titre />
-      <div className="center">
+      <div id="portfolio" className="center">
         <Portfolio />
       </div>
-      <Form />
+      <div id="contact">
+        <Form />
+      </div>
     </div>
   );
 }

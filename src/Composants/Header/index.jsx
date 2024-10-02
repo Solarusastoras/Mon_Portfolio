@@ -1,4 +1,3 @@
-// src/Pages/Projets/index.jsx
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../Utils/SASS/base/_colors.scss";
@@ -10,6 +9,13 @@ import LogoAPropos from "../../Utils/Images/Logo/carte-didentite.webp";
 import LogoContact from "../../Utils/Images/Logo/contacts-google.webp";
 
 function Header() {
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <header className="header">
       <div className="identite_position">
@@ -34,11 +40,17 @@ function Header() {
               Accueil
             </li>
           </Link>
-          <li>
+          <li
+            className="pointer-cursor"
+            onClick={() => scrollToSection("portfolio")}
+          >
             <img src={LogoPortofolio} alt="Portfolio" />
             Portfolio
           </li>
-          <li>
+          <li
+            className="pointer-cursor"
+            onClick={() => scrollToSection("contact")}
+          >
             <img src={LogoContact} alt="Contact" />
             Contact
           </li>

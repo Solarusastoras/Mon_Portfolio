@@ -12,9 +12,11 @@ const Error = () => {
   return (
     <div>
       <div>
-        <h1>404</h1>
-        <h2>Page Not Found</h2>
-        <Link to="/">Retour au site</Link>
+        <h1 className="title_error">404</h1>
+        <p className="text_eror">⛔ Page not Found ⛔</p>
+        <Link to="/*" className="errorpage-link">
+          Retour au site
+        </Link>
       </div>
     </div>
   );

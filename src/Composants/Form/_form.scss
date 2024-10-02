@@ -2,11 +2,10 @@
   background-size: cover;
   border: 2px solid #000000;
   border-radius: 15px;
-  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1), 
-              inset 0 -4px 8px rgba(255, 255, 255, 0.7); 
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1),
+    inset 0 -4px 8px rgba(255, 255, 255, 0.7);
   max-width: 600px;
   margin: 0 auto;
-  color: #000000;
   background-image: url("../../Utils/Images/Img/papyrus.jpg");
   padding: 20px;
 }
@@ -17,8 +16,8 @@
   padding: 10px;
   margin-bottom: 20px;
   background-color: rgba(255, 255, 255, 0.8);
-  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1), 
-              inset 0 -4px 8px rgba(255, 255, 255, 0.7); 
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1),
+    inset 0 -4px 8px rgba(255, 255, 255, 0.7);
 }
 
 .conteneur-formulaire h3 {
@@ -50,7 +49,7 @@
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease-in-out;
 }
@@ -62,8 +61,6 @@
 }
 
 .conteneur-formulaire input[type="submit"] {
-  background-color: #ff2600;
-  color: #ffffff;
   font-weight: bolder;
   border: none;
   border-radius: 5px;
@@ -74,22 +71,11 @@
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
-.conteneur-formulaire input[type="submit"].valid-submit {
-  background-color: #28a745;
-  color: #ffffff;
-}
-
-.conteneur-formulaire input[type="submit"]:hover {
-  background-color: #b8860b;
-}
-
 .error-message {
-  color: red;
   margin-top: 5px;
 }
 
 .confirmation-message {
-  color: green;
   margin-top: 5px;
 }
 
@@ -101,15 +87,4 @@ label {
 
 .cadre-texte {
   cursor: default;
-}
-
-.invalid {
-  background: repeating-linear-gradient(
-    145deg,
-    #c72828,
-    #c72828 10px,
-    #ffffff 10px,
-    #ffffff 20px
-  );
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }

@@ -1,52 +1,57 @@
 /* src/Pages/Projets/_header.scss */
 
 .header {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    background-image: url('../../Utils/Images/Img/img3.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../Utils/Images/Img/img3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  height: 30vh;
 }
 
 h2 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    text-align: center;
+  font-size: 3em;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .identite_position {
-   position: absolute; 
-   left: 3%;
-    margin: 0;
+  position: absolute;
+  left: 3%;
+  margin: 0;
+  font-size: 1.2em;
 }
 
 .centered-text {
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
 }
 
 nav {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: 3%;
-    top: 50%; 
-    transform: translateY(-50%); 
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 li {
-    list-style: none;
-    margin-top: 15px;
-    display: flex;
-    align-items: center;
+  list-style: none;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
 
-    & img {
-        width: 20px;
-        height: 20px;
-        margin-right: 10px;
-    }
+  & img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+}
+
+.pointer-cursor {
+  cursor: pointer;
 }
