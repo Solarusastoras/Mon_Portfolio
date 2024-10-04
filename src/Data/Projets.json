@@ -4,7 +4,7 @@
     "title": "Riding Cities",
     "cover": " https://i.ibb.co/f2FNk0v/riding-cities.webp",
     "pictures": "https://i.ibb.co/f2FNk0v/riding-cities.webp",
-    "description": "Site web d une association de Rider",
+    "description": "Site web d une association de Rider. Ce projet est une introduction aux fondamentaux du langage HTML et CSS. Ma tâche principale était de créer une nouvelle section sur la page web de l'association.   ",
     "alt": "Riding Cities",
     "type": "Site statique",
     "tags": [
@@ -31,7 +31,9 @@
     "cover": "https://i.ibb.co/0fxP3N4/booki.webp",
     "pictures": "https://i.ibb.co/0fxP3N4/booki.webp",
     "alt": "Booki",
-    "description": "Site web d'hebergement",
+    "description": "Site web d'hebergement. Ma mission principale était d'intégrer l'interface responsive de leur site. J'avais à disposition les maquettes Figma pour mobile, tablette et desktop, ainsi que les images et une note de synthèse sur les spécificités du projet. J'ai créé mes propres composants d'interface avec HTML et CSS afin d'avoir un rendu correspondant à la maquette.",
+
+
     "type": "Site statique",
     "tags": [
       {
@@ -53,10 +55,11 @@
   {
     "id": "4",
     "title": "ohmyfood",
-    "cover": "",
-    "pictures": "",
+    "cover": "https://i.ibb.co/JjRtfYv/ohmyfood.webp",
+    "pictures": "https://i.ibb.co/JjRtfYv/ohmyfood.webp",
     "alt": "ohmyfood",
-    "description": "Site web livraison de repas",
+    "description": "Site web livraison de repas. Ce projet J'ai été amène à travailler sur l'interface mobile-first du site d’une start-up. J'ai utilisé Sass, implémenté des animations CSS et versionné votre projet avec Git et GitHub.",
+
     "type": "Site statique",
     "tags": [
       {
@@ -66,10 +69,10 @@
         "definition": "HTML (HyperText Markup Language) est le langage de balisage standard utilisé pour créer des pages web."
       },
       {
-        "name": "CSS",
-        "logo": "https://i.ibb.co/n6KYNK2/css-3.webp",
-        "alt": "Logo CSS",
-        "definition": "CSS (Cascading Style Sheets) est un langage de feuille de style utilisé pour décrire la présentation d'un document écrit en HTML ou XML."
+        "name": "SCSS",
+        "logo": "https://i.ibb.co/bJ2qgHf/sass.webp",
+        "alt": "Logo SCSS",
+        "definition": " SCSS est une extension de CSS qui ajoute des fonctionnalités comme les variables, les imbrications, les mixins et l'héritage."
       }
     ],
     "github": "https://github.com/Solarusastoras/Projet-4-.git",
@@ -78,10 +81,10 @@
   {
     "id": "5",
     "title": "Print-it",
-    "cover": "",
-    "pictures": "",
+    "cover": "https://i.ibb.co/HdfZS4R/print-it.webp",
+    "pictures": "https://i.ibb.co/HdfZS4R/print-it.webp",
     "alt": "Print-it",
-    "description": "Site web d'impression",
+    "description": "Site web d'impression. Ma tâche a consisté à mettre à jour le code HTML existant et à ajouter un carrousel en JavaScrip",
     "type": "Site statique",
     "tags": [
       {
@@ -96,10 +99,10 @@
   {
     "id": "6",
     "title": "Sophie Bluel",
-    "cover": "",
-    "pictures": "",
+    "cover": "https://i.ibb.co/XjwPg3D/sophie-Bluel.webp",
+    "pictures": "https://i.ibb.co/XjwPg3D/sophie-Bluel.webp",
     "alt": "Sophie Bluel",
-    "description": "Portfolio d'une architecte",
+    "description": "Portfolio d'une architecte. Ce projet m'a engagé à créer une page web dynamique pour le site internet d'une architecte d'intérieur en utilisant JavaScript et en communiquant avec une API. J'ai créé également une page de connexion pour l'administrateur du site ainsi qu'une modale permettant d'uploader de nouveaux médias",
     "type": "Site dynamique",
     "tags": [
       {
@@ -126,16 +129,17 @@
   {
     "id": "7",
     "title": "Kasa",
-    "cover": "",
-    "pictures": "",
+    "cover": "https://i.ibb.co/48Kd23H/kasa.webp",
+    "pictures": "https://i.ibb.co/48Kd23H/kasa.webp",
     "alt": "Kasa",
-    "description": "Location de logement",
+    "description": "un site de location de logement. J'ai implémenté le front-end d’une application en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive. J'ai débuté le projet avec Create React App et l utilisation de Node.js",
     "type": "Site dynamique",
     "tags": [
       {
         "name": "SCSS",
-        "logo": "../../public/logos/html_logo.png",
-        "alt": "Logo SCSS"
+        "logo": "https://i.ibb.co/bJ2qgHf/sass.webp",
+        "alt": "Logo SCSS",
+        "definition": " SCSS est une extension de CSS qui ajoute des fonctionnalités comme les variables, les imbrications, les mixins et l'héritage."
       },
       {
         "name": "Javascript",
@@ -145,7 +149,7 @@
       },
       {
         "name": "REACT",
-        "logo": "../../public/logos/css_logo.png",
+        "logo": "https://i.ibb.co/R65XmBz/react.webp",
         "alt": "Logo REACT",
         "definition": "React est une bibliothèque JavaScript pour construire des interfaces utilisateur."
       }
@@ -156,10 +160,10 @@
   {
     "id": "8",
     "title": "Nina Carducci",
-    "cover": "",
-    "pictures": "",
+    "cover": "https://i.ibb.co/9qZ34gD/nina-carducci.webp",
+    "pictures": "https://i.ibb.co/9qZ34gD/nina-carducci.webp",
     "alt": "Nina Carducci",
-    "description": "Site de Photographe",
+    "description": "Le site de Photographe. J'ai optimisé le référencement d’un site, en améliorant sa performance et son accessibilité.",
     "type": "SEO",
     "tags": [
       {
@@ -175,10 +179,10 @@
   {
     "id": "9",
     "title": "724 events",
-    "cover": "",
-    "pictures": "",
+    "cover": "https://i.ibb.co/xYR9hR2/724events.webp",
+    "pictures": "https://i.ibb.co/xYR9hR2/724events.webp",
     "alt": "724 events",
-    "description": "Site dorganisation d'evenement",
+    "description": "Site dorganisation d'evenement. Dans ce projet, J'ai débuggé et finalisé le développement d'un site one-page.",
     "type": "Debug",
     "tags": [
       {
@@ -188,7 +192,7 @@
       },
       {
         "name": "REACT",
-        "logo": "../../public/logos/css_logo.png",
+        "logo": "https://i.ibb.co/R65XmBz/react.webp",
         "alt": "Logo REACT",
         "definition": "React est une bibliothèque JavaScript pour construire des interfaces utilisateur."
       }

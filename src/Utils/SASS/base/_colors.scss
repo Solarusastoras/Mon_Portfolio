@@ -33,10 +33,10 @@ nav, footer, header a, header {
 }
 
 // Page Projets
-.conteneur-projet,
+
 .card_descrip,
 .card_langage,
-.cards,
+.cards, .card_git,
 .projet-git-button {
   @include background-color($base-color);
 }

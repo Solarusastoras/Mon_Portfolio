@@ -36,11 +36,11 @@ const Projets = () => {
       />
       <div className="cards_projet">
         <div className="card_descrip">
-          <h3>Description</h3>
+          <h3 className="h3_projet">Description</h3>
           <p className="projet-description">{clickedProjet.description}</p>
         </div>
         <div className="card_langage">
-          <h3>Langages utilisés</h3>
+          <h3 className="h3_projet">Langages utilisés</h3>
           <div className="projet-tags">
             {clickedProjet.tags.map((tags, index) => (
               <div
@@ -56,8 +56,8 @@ const Projets = () => {
         </div>
       </div>
       <div className="projet-git">
-        <div className="cards">
-          <h3>Lien vers la repo du site github</h3>
+        <div className="card_git">
+          <h3 className="h3_projet">Le code du site github</h3>
           <div
             className="projet-git-button"
             onClick={() => window.open(clickedProjet.github, "_blank")}
@@ -65,8 +65,8 @@ const Projets = () => {
             GitHub
           </div>
         </div>
-        <div className="card">
-          <h3>Ouverture du site</h3>
+        <div className="card_git">
+          <h3 className="h3_projet">Ouverture du site</h3>
           <div
             className="projet-git-button"
             onClick={() => window.open(clickedProjet.gitpage, "_blank")}
