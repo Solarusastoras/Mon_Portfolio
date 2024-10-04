@@ -37,7 +37,7 @@ function Header() {
           <Link to="/">
             <li>
               <img src={LogoAccueil} alt="Accueil" />
-              Accueil
+              <span>Accueil</span>
             </li>
           </Link>
           <li
@@ -45,18 +45,18 @@ function Header() {
             onClick={() => scrollToSection("portfolio")}
           >
             <img src={LogoPortofolio} alt="Portfolio" />
-            Portfolio
+            <span>Portfolio</span>
           </li>
           <li
             className="pointer-cursor"
             onClick={() => scrollToSection("contact")}
           >
             <img src={LogoContact} alt="Contact" />
-            Contact
+            <span>Contact</span>
           </li>
           <Link to="/Apropos">
             <li>
-              <img src={LogoAPropos} alt="Apropos" />A propos
+              <img src={LogoAPropos} alt="Apropos" /> <span>A propos</span>
             </li>
           </Link>
         </ul>

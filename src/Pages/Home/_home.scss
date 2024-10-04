@@ -12,5 +12,13 @@
 
 body {
   background-image: url("../../Utils/Images/Img/le-marbre.jpg");
-  background-size: cover;
+}
+
+
+// Breakpoint Tablet
+@media (max-width: 768.2px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
 }

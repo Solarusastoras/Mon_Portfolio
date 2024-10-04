@@ -46,55 +46,94 @@ li {
   align-items: center;
 
   & img {
-    width: 20px;
-    height: 20px;
+    width: 3vw;
+    height: 20%;
     margin-right: 10px;
   }
 }
-
+.header_nav {
+  font-size: 1rem;
+}
 .pointer-cursor {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023.90.9px) {
   h2 {
     font-size: 1.5rem;
     margin-top: -10px;
   }
 
- .identite_position {
-  position: absolute;
-  top: 1%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
-  text-align: center;
-  margin-top: 10px;
-  font-weight: 900;
+  .identite_position {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 900;
+  }
+  .header_nav li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;
+  }
+
+  .header_nav img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+    margin-top: 135px;
+  }
 }
 
+@media (min-width: 320px) and (max-width: 767.9px) {
+  h2 {
+    font-size: 1.5rem;
+    margin-top: -10px;
+  }
 
-.header_nav {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  list-style: none;
-  padding: 0;
-}
+  .identite_position {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 900;
+  }
 
-.header_nav li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  color: transparent;
-}
+  .header_nav {
+    display: flex; /* Utilisez flex pour aligner les éléments horizontalement */
+    justify-content: center; /* Centrez les éléments horizontalement */
+    align-items: center; /* Centrez les éléments verticalement */
+    margin-top: 130px; /* Conservez le margin-top */
+    gap: 5px; /* Réduisez l'espace entre les éléments si nécessaire */
+    list-style: none; /* Supprimez les puces de liste */
+    padding: 0; /* Supprimez le padding par défaut */
+    margin: 0 auto; /* Centrez la navigation horizontalement */
+    width: 100%; /* Assurez-vous que la navigation prend toute la largeur */
+    max-width: 100%; /* Assurez-vous que la navigation ne dépasse pas la largeur de l'écran */
+  }
 
-.header_nav img {
-  width: 30px; 
-  height: 30px; 
-  margin-bottom: 5px; 
-  margin-top: 135px;
-}
+  .header_nav li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .header_nav img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .header_nav li span {
+    visibility: hidden; /* Masquer uniquement le texte */
+  }
 }

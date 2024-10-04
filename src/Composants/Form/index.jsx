@@ -62,9 +62,11 @@ function Form() {
       <h3>Contact</h3>
       <br />
       <div className="cadre-texte">
-        <p>Une question ? Une demande de devis ?</p>
+        <p>Une question ?</p>
         <p>
-          N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
+          N’hésitez pas à m’écrire ! 
+          <br />
+      Je vous répondrais en moins de 24 heures
         </p>
       </div>
       <form onSubmit={handleSubmit}>
