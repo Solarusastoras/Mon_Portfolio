@@ -3,6 +3,7 @@
   margin-bottom: 20px;
   z-index: 7;
   display: inline-block;
+  font-size: 2rem;
 }
 
 .conteneur-titre {
@@ -23,6 +24,8 @@
   margin-bottom: 30px;
   box-sizing: border-box;
   width: 100vw;
+  background-image: url("../../Utils/Images/Img/img6.jpg");
+  background-size: cover;
 }
 
 .filtres {
@@ -47,21 +50,12 @@
   padding: 20px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 767.9px) {
   .grid_projets {
     grid-template-columns: 1fr;
-    justify-items: center;
-    align-items: center;
-  }
-
-  .filtres {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
   }
 
   .filtres button {
     display: none;
   }
-
 }

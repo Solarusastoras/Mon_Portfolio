@@ -3,6 +3,8 @@
   margin: 0 auto;
   padding: 20px;
   margin-top: 50px;
+  background-image: url("../../Utils/Images/Img/img6.jpg");
+  background-size: cover;
 }
 
 .apropos-title {
@@ -33,4 +35,53 @@
   display: flex;
   justify-content: center;
   margin-top: 40px;
+}
+
+.home-link {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: white;
+  transition: background-color 0.3s, color 0.3s;
+  
+}
+
+.home-link:hover {
+  background-color: antiquewhite;
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+@media (min-width: 320px) and (max-width: 767.9px) {
+  .apropos-container {
+    padding: 10px;
+    margin-top: 20px;
+    width: 90%;
+  }
+
+  .apropos-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .apropos-content {
+    font-size: 1rem;
+    padding: 10px;
+    font-weight: 800;
+    line-height: 1.4;
+  }
+
+  .apropos-lien {
+    margin-top: 20px;
+  }
+
+  .home-link {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
 }

@@ -59,7 +59,7 @@ function Form() {
 
   return (
     <div className="conteneur-formulaire">
-      <h3>Contact</h3>
+      <h3>CONTACT</h3>
       <br />
       <div className="cadre-texte">
         <p>Une question ?</p>

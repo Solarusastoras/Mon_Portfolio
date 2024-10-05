@@ -57,7 +57,7 @@ const Projets = () => {
       </div>
       <div className="projet-git">
         <div className="card_git">
-          <h3 className="h3_projet">Le code du site github</h3>
+          <h3 className="h3_projet">Le code du site</h3>
           <div
             className="projet-git-button"
             onClick={() => window.open(clickedProjet.github, "_blank")}

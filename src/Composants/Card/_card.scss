@@ -1,3 +1,4 @@
+
 .card {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -28,7 +29,7 @@
   margin-top: 10px;
 }
 
-@media (min-width: 768px) and (max-width: 10px) {
+@media (min-width: 768px) and (max-width: 1023.9.9px) {
   .grid_projets {
     width: 110%;
     height: auto;
@@ -36,9 +37,6 @@
 }
 
 
-@media (min-width: 320px) and (max-width: 1023.9.9px) {
-  .card {
-    width: 90%; 
-    height: 30vh; 
-  }
+@media (min-width: 320px) and (max-width: 767.9px) {
+
 }

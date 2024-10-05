@@ -3,12 +3,13 @@ h1 {
     justify-content: center;
     margin-top: 3.5vh;
     margin-bottom: 3vh;
+    font-size: 5rem;
 }
 
-
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 767.9px) {
     h1 {
-        font-size: 1.5rem;
+        font-size: 3.5rem;
+        font-weight: bold;
+        
     }
-
 }

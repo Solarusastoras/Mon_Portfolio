@@ -13,7 +13,7 @@ body {
 .h3_projet {
   font-size: 2rem;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .projet-description {
@@ -54,6 +54,7 @@ body {
   justify-content: space-between;
   width: 80%;
   gap: 2vw;
+  
 }
 
 .card_descrip, .card_langage {
@@ -64,6 +65,25 @@ body {
   text-align: center;
   width: 48%; 
 }
+.card_descrip {
+  max-height: 270px;
+  overflow-y: auto;
+  background-image: url("../../Utils/Images/Img/img5.jpg");
+  background-size: cover;
+  font-weight: bold;
+  font-size: 0.9em; 
+  line-height: 1.2; 
+  padding-left: 5rem;
+  padding-right: 5rem; 
+  text-align: justify;
+
+}
+
+.card_langage {
+  background-image: url("../../Utils/Images/Img/img5.jpg");
+  background-size: cover;
+}
+
 
 .projet-tags {
   display: flex;
@@ -71,6 +91,7 @@ body {
   gap: 10%;
   justify-content: center;
   margin-top: 7%;
+  
 }
 
 .projet-tag {
@@ -84,7 +105,7 @@ body {
   border-radius: 5px;
   position: relative;
   overflow: hidden;
-  background-image: url('../../Utils/Images/Img/img1.jpg');
+  background-color: black;
   background-size: repeat;
   cursor: pointer;
 }
@@ -163,12 +184,13 @@ body {
   text-align: center;
   width: 48%; 
   height: auto;
-  transition: transform 0.3s, box-shadow 0.3s; /* Ajoutez cette ligne pour l'animation */
+  transition: transform 0.3s, box-shadow 0.3s; 
+   background-image: url("../../Utils/Images/Img/papyrus.jpg");
 }
 
 .card_git:hover {
-  transform: translateY(-5px); /* Ajoutez cette ligne pour l'animation */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ajoutez cette ligne pour l'animation */
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 .projet-git-button {
@@ -198,17 +220,6 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-  .projet-git {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card_git {
-    width: 100%;
-  }
-}
 @keyframes border-dot-animation {
   0% {
     top: 0;
@@ -257,7 +268,6 @@ body {
   display: flex;
   justify-content: space-between;
   width: 80%;
-  margin-top: 20px;
 }
 
  .card_git {

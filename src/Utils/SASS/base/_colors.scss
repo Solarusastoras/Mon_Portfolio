@@ -1,34 +1,22 @@
 // Couleurs
 $base-color: #ffffff;
 $secondary-color: #000000;
-$third-color: #c98312;
-$fourth-color: #ffff;
-$fiveth-color: #fff;
-$highlight-color: #e6b401;
-$highlight-hover-color: #b8860b;
-$background-dark: #343a40;
-$background-light: #ffffff8a;
+$third-color: #da911d;
+$fourth-color: #102eb2e2;
+$fifth-color: antiquewhite;
 $error-color: #c72828;
 $success-color: #28a745;
-$warning-color: #ff2600;
-$confirmation-color: green;
-
-// Mixins
-@mixin text-color($color) {
-  color: $color;
-}
-
-@mixin background-color($color) {
-  background-color: $color;
-}
 
 // Page Home
 h1 {
-  @include text-color($third-color);
+  color: $secondary-color;
 }
 
-nav, footer, header a, header {
-  @include text-color($base-color);
+nav,
+footer,
+header a,
+header {
+  color: $base-color;
   text-decoration: none;
 }
 
@@ -36,81 +24,74 @@ nav, footer, header a, header {
 
 .card_descrip,
 .card_langage,
-.cards, .card_git,
+.cards,
+.card_git,
 .projet-git-button {
-  @include background-color($base-color);
+  background-color: $base-color;
 }
 
 .titre-projet,
 .projet-git-button {
-  @include text-color($secondary-color);
+  color: $secondary-color;
 }
 
 .projet-tag {
-  @include text-color($base-color);
+  color: $base-color;
 }
 
 .projet-tag::after {
-  @include background-color(orange);
+  background-color: $third-color;
 }
 
 .projet-git-button:hover {
-  @include text-color($base-color);
+  color: $base-color;
 }
 
 .projet-git-button:active {
-  @include background-color(#e0e0e0);
+  background-color: $base-color;
 }
 
-// Page A Propos
-.apropos-content {
-  @include background-color(antiquewhite);
+// Page A propos
+.home-link, h1 {
+  background-color: $fifth-color;
+  color: $secondary-color;
 }
 
 // Composants
 
 // Portfolio
 .title_portfolio {
-  @include text-color(#fffdfd);
-}
-
-.conteneur-portfolio {
-   background: linear-gradient(to bottom, #28844b, #dc7311, #55055a);
-}
-
-.filtres {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+  color: $secondary-color;
 }
 
 .filtres button.active,
 .filtres button:hover {
-  @include background-color($background-dark);
-  @include text-color($base-color);
+  background-color: $fourth-color;
+  color: $base-color;
 }
 
 // Form
 .conteneur-formulaire {
-  @include text-color($secondary-color);
+  color: $secondary-color;
 }
 
 .conteneur-formulaire input[type="submit"] {
-  @include background-color($warning-color);
-  @include text-color($base-color);
+  background-color: $error-color;
+  color: $base-color;
 }
 
 .conteneur-formulaire input[type="submit"].valid-submit {
-  @include background-color($success-color);
-  @include text-color($base-color);
+  background-color: $success-color;
+  color: $base-color;
 }
 
-.error-message, .text_eror {
-  @include text-color(red);
+.error-message,
+.text_eror {
+  color: $error-color;
 }
 
 .confirmation-message {
-  @include text-color($confirmation-color);
+  color: $success-color;
 }
 
 .invalid {
@@ -124,25 +105,27 @@ nav, footer, header a, header {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
-// Footer
-footer {
-  @include background-color($background-dark);
-  @include text-color($base-color);
+// Footer et Header
+footer,
+header {
+  background-color: $secondary-color;
+  color: $base-color;
 }
 
+// Footer
 footer a {
-  @include text-color($highlight-color);
+  color: $third-color;
 }
 
 footer a:hover {
-  @include text-color($highlight-hover-color);
+  color: $third-color;
 }
 
 // Card
 .card {
-  @include background-color($background-light);
+  background-color: $base-color;
 }
 
 .card-title {
-  @include text-color($secondary-color);
+  color: $secondary-color;
 }
