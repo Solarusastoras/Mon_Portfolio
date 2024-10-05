@@ -1,21 +1,21 @@
 .apropos-container {
-  max-width: 580px;
-  margin: 0 auto;
+  max-width: 805px;
+  margin: 100px auto;
   padding: 20px;
   margin-top: 50px;
-  background-image: url("../../Utils/Images/Img/img6.jpg");
+  background-image: url("../../Utils/Images/Img/papyrus.jpg");
   background-size: cover;
 }
 
 .apropos-title {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 5rem;
   margin-bottom: 50px;
 }
 
 .apropos-content {
   padding: 20px;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: bold;
   line-height: 1.6;
   animation: fadeIn 2s ease-in-out;
@@ -39,20 +39,19 @@
 
 .home-link {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 253, 253);
   font-size: 2rem;
   font-weight: bold;
   padding: 10px 20px;
   border: 2px solid black;
   border-radius: 15px;
-  background-color: white;
-  transition: background-color 0.3s, color 0.3s;
-  
+  background-color: rgba(248, 142, 3, 0.789);
+  transition: background-color 0.3s, color 0.3s; 
 }
 
 .home-link:hover {
-  background-color: antiquewhite;
-  color: black;
+  background-color: rgb(0, 0, 0);
+  color: antiquewhite;
   font-weight: bold;
   font-size: 2rem;
 }
@@ -62,6 +61,7 @@
     padding: 10px;
     margin-top: 20px;
     width: 90%;
+    margin-top: 100px;
   }
 
   .apropos-title {

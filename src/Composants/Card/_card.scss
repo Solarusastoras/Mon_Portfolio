@@ -1,14 +1,15 @@
 
 .card {
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
   padding: 20px;
-  max-width: 85%;
-  height: 25vh;
-  padding-top: 2vh;
+  width: 15rem;
+  height: 20rem;
+  padding-top: 2rem;
+
 }
 
 .card:hover {
@@ -17,14 +18,18 @@
 }
 
 .card-title {
-  font-size: 1.8vh;
+  font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: bolder;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: antiquewhite;
+  border: 1px solid black;
 }
 
 .card-image {
-  width: 90%;
-  height:25vh;
+  max-width: 85%;
+  height: 4rem;
   border-radius: 10px;
   margin-top: 10px;
 }

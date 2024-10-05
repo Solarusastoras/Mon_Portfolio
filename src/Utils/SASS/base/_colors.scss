@@ -66,8 +66,8 @@ header {
 
 .filtres button.active,
 .filtres button:hover {
-  background-color: $fourth-color;
-  color: $base-color;
+  background-color: $secondary-color;
+  color: $fifth-color;
 }
 
 // Form
@@ -109,7 +109,7 @@ header {
 footer,
 header {
   background-color: $secondary-color;
-  color: $base-color;
+  color: $fifth-color;
 }
 
 // Footer

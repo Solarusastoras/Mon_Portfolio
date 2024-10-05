@@ -1,9 +1,9 @@
 .title_portfolio {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 50px;
   z-index: 7;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 3.5rem;
 }
 
 .conteneur-titre {
@@ -18,13 +18,13 @@
 .conteneur-portfolio {
   border: 5px solid #0000008a;
   border-radius: 15px;
-  padding: 20px;
-  margin: 2%;
+  padding: 5%;
+  margin: auto; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   box-sizing: border-box;
-  width: 100vw;
-  background-image: url("../../Utils/Images/Img/img6.jpg");
+  width: 80%;
+  background-image: url("../../Utils/Images/Img/papyrus.jpg");
   background-size: cover;
 }
 
@@ -38,19 +38,26 @@
   margin: 0 10px;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
 }
 
 .grid_projets {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  padding: 20px;
+  margin: auto;
 }
 
 @media (min-width: 320px) and (max-width: 767.9px) {
+  .title_portfolio {
+    font-size: 1.8rem;
+    margin: 20px;
+  }
+  
   .grid_projets {
     grid-template-columns: 1fr;
   }
