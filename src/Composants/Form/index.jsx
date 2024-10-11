@@ -5,6 +5,7 @@ import {
   faEnvelope,
   faComment,
 } from "@fortawesome/free-solid-svg-icons";
+import emailjs from "emailjs-com";
 import "./_form.scss";
 import "../../Utils/SASS/base/_colors.scss";
 import "../../Utils/SASS/base/_fonts.scss";
@@ -45,8 +46,23 @@ function Form() {
       return;
     }
 
-    setConfirmation("Votre message a été envoyé avec succès !");
-    setFormData({ nom: "", email: "", message: "" });
+    // Envoyer le formulaire via EmailJS
+    emailjs
+      .send(
+        "service_x0gm4rc",
+        "template_51z9t1e",
+        formData,
+        "MWPrmDFXWXcNg-YkH"
+      )
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        setConfirmation("Votre message a été envoyé avec succès !");
+        setFormData({ nom: "", email: "", message: "" });
+      })
+      .catch((err) => {
+        console.error("FAILED...", err);
+        setConfirmation("Une erreur s'est produite, veuillez réessayer.");
+      });
   };
 
   const handleInputChange = (e) => {
@@ -64,9 +80,9 @@ function Form() {
       <div className="cadre-texte">
         <p>Une question ?</p>
         <p>
-          N’hésitez pas à m’écrire ! 
+          N’hésitez pas à m’écrire !
           <br />
-      Je vous répondrais en moins de 24 heures
+          Je vous répondrais en moins de 24 heures
         </p>
       </div>
       <form onSubmit={handleSubmit}>
