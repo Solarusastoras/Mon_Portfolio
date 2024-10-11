@@ -55,7 +55,7 @@
   font-family: "Times New Roman", Times, serif;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease-in-out;
-  width: 100%; // Ajouté pour élargir les champs de saisie
+  width: 100%; 
 }
 
 .conteneur-formulaire .submit-container {
@@ -95,9 +95,49 @@ label {
   cursor: default;
 }
 
-@media (max-width: 768px) {
+  .conteneur-formulaire textarea,
+  .conteneur-formulaire input[type="text"],
+  .conteneur-formulaire input[type="email"] {
+    font-size: 2rem;
+  }
+
+
+@media (min-width: 768px) and (max-width: 1023.9px) {
+  .conteneur-formulaire {
+    width: 80%;
+  }
+
+    .conteneur-formulaire textarea,
+  .conteneur-formulaire input[type="text"],
+  .conteneur-formulaire input[type="email"] {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767.9px) {
   .conteneur-formulaire {
     width: 90%;
-    
+  }
+
+  .conteneur-formulaire h3 {
+    font-size: 1.5rem;
+  }
+
+  .conteneur-formulaire p {
+    font-size: 1.2rem;
+  }
+
+  .conteneur-formulaire label {
+    font-size: 1.2rem;
+  }
+
+  .conteneur-formulaire textarea,
+  .conteneur-formulaire input[type="text"],
+  .conteneur-formulaire input[type="email"] {
+    font-size: 1rem;
+  }
+
+  .conteneur-formulaire input[type="submit"] {
+    font-size: 1.5rem;
   }
 }

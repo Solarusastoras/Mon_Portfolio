@@ -52,8 +52,8 @@ function Portfolio() {
       <div className="grid_projets">
         {filteredProjects.map((project) => (
           <div key={project.id} onClick={() => handleProjectClick(project.id)}>
-            <Card project={project} />
-          </div>
+              <Card project={project} />
+            </div>
         ))}
       </div>
     </div>

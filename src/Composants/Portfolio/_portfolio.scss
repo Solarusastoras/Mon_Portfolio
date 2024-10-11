@@ -19,7 +19,6 @@
   border: 5px solid #0000008a;
   border-radius: 15px;
   padding: 5%;
-  margin: auto; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 60px;
   box-sizing: border-box;
@@ -41,17 +40,36 @@
   border-radius: 15px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   margin-bottom: 30px;
 }
 
 .grid_projets {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  margin: auto;
+  gap: 25px;
+  margin-left: 0px;
 }
 
+
+// Tablette
+@media (min-width: 768px) and (max-width: 1023.9px) {
+  .title_portfolio {
+    font-size: 2.5rem;
+  }
+  
+  .grid_projets {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .filtres button {
+   font-size: 1rem;}
+}
+
+
+
+
+// Mobile
 @media (min-width: 320px) and (max-width: 767.9px) {
   .title_portfolio {
     font-size: 1.8rem;
@@ -59,7 +77,8 @@
   }
   
   .grid_projets {
-    grid-template-columns: 1fr;
+       grid-template-columns: repeat(1, 1fr);
+       margin-left: 1%;
   }
 
   .filtres button {

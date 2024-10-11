@@ -7,21 +7,19 @@
 body {
   margin: 0;
   padding: 0;
-
 }
 
 .h3_projet {
   font-size: 2rem;
   text-align: center;
-  margin-top: 40px;
 }
 
 .projet-description {
-  text-align: left; 
-  font-size: 1.5rem; 
-  margin-top: 10px; 
-  margin-bottom: 10px; 
-  line-height: 1.5; 
+  text-align: left;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.5;
 }
 
 .conteneur-projet {
@@ -37,7 +35,7 @@ body {
 .titre-projet {
   text-align: center;
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   z-index: 7;
   width: 100%;
 }
@@ -54,16 +52,16 @@ body {
   justify-content: space-between;
   width: 80%;
   gap: 2vw;
-  
 }
 
-.card_descrip, .card_langage {
+.card_descrip,
+.card_langage {
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 48%; 
+  width: 48%;
 }
 .card_descrip {
   max-height: 270px;
@@ -71,12 +69,11 @@ body {
   background-image: url("../../Utils/Images/Img/papyrus.jpg");
   background-size: cover;
   font-weight: bold;
-  font-size: 0.9em; 
-  line-height: 1.2; 
+  font-size: 0.9em;
+  line-height: 1.2;
   padding-left: 5rem;
-  padding-right: 5rem; 
+  padding-right: 5rem;
   text-align: justify;
-
 }
 
 .card_langage {
@@ -84,20 +81,18 @@ body {
   background-size: cover;
 }
 
-
 .projet-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 10%;
   justify-content: center;
   margin-top: 7%;
-  
 }
 
 .projet-tag {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   gap: 5px;
   padding: 5px 10px;
@@ -161,7 +156,7 @@ body {
 .tag-logo {
   width: 70px;
   height: 70px;
-  object-fit: contain; 
+  object-fit: contain;
 }
 
 .tag-name {
@@ -182,15 +177,15 @@ body {
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 48%; 
+  width: 48%;
   height: auto;
-  transition: transform 0.3s, box-shadow 0.3s; 
-   background-image: url("../../Utils/Images/Img/papyrus.jpg");
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-image: url("../../Utils/Images/Img/papyrus.jpg");
 }
 
 .card_git:hover {
-  transform: translateY(-5px); 
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .projet-git-button {
@@ -249,7 +244,7 @@ body {
 .tag-logo {
   width: 70px;
   height: 70px;
-  object-fit: contain; 
+  object-fit: contain;
 }
 
 .tag-name {
@@ -270,13 +265,13 @@ body {
   width: 80%;
 }
 
- .card_git {
+.card_git {
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 47%; 
+  width: 47%;
   height: auto;
   gap: 10px;
 }
@@ -308,9 +303,14 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
-
 /* Responsive tablette*/
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023.9px) {
+
+
+   .h3_projet {
+    font-size: 1.7rem;
+  }
+
   .projet_ligne {
     flex-direction: column;
     align-items: center;
@@ -326,7 +326,9 @@ body {
     align-items: center;
   }
 
-  .card_descrip, .card_langage, .card {
+  .card_descrip,
+  .card_langage,
+  .card {
     width: 90%;
     margin-bottom: 20px;
   }
@@ -334,7 +336,44 @@ body {
   .projet-git {
     flex-direction: column;
     align-items: center;
+    gap: 40px;
+    margin-bottom: -30px;
   }
 }
 
 // Reponsive mobile
+@media (min-width: 320px) and (max-width: 767.9px) {
+ 
+    .projet-cover {
+    width: 90%;
+    margin-left: 0;
+  }
+ 
+ 
+  .h3_projet {
+    font-size: 1.5rem;
+  }
+
+  .cards_projet {
+    flex-direction: column;
+    align-items: center;
+    width: 190%;
+    gap: 20px;
+  }
+
+  .projet-git {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 180%;
+  }
+
+  .projet-description {
+  font-size: 1rem;
+}
+
+.card_descrip {
+  font-size: 0.8em;
+  padding-left: 2rem;
+  padding-right: 2rem;}
+}
