@@ -1,13 +1,20 @@
 {
   "files": {
-    "main.css": "/Mon_Portfolio/static/css/main.8a685450.css",
-    "main.js": "/Mon_Portfolio/static/js/main.32672923.js",
+    "main.css": "/Mon_Portfolio/static/css/main.a3bb1b74.css",
+    "main.js": "/Mon_Portfolio/static/js/main.caab01a8.js",
+    "static/media/papyrus.jpg": "/Mon_Portfolio/static/media/papyrus.ebc5c73fe1416ec0fab2.jpg",
+    "static/media/24616726.webp": "/Mon_Portfolio/static/media/24616726.eb60176785a6e573c2bf.webp",
+    "static/media/dossier-portfolio.webp": "/Mon_Portfolio/static/media/dossier-portfolio.b6ecdc6aca5bb8f9a0aa.webp",
+    "static/media/accueil.webp": "/Mon_Portfolio/static/media/accueil.b6703c053d9101eac145.webp",
+    "static/media/contacts-google.webp": "/Mon_Portfolio/static/media/contacts-google.a9c351732c37186d5957.webp",
+    "static/media/carte-didentite.webp": "/Mon_Portfolio/static/media/carte-didentite.c36f70e5623aca912879.webp",
+    "static/media/linkedin.webp": "/Mon_Portfolio/static/media/linkedin.dbdd6319439e4f8433a6.webp",
     "index.html": "/Mon_Portfolio/index.html",
-    "main.8a685450.css.map": "/Mon_Portfolio/static/css/main.8a685450.css.map",
-    "main.32672923.js.map": "/Mon_Portfolio/static/js/main.32672923.js.map"
+    "main.a3bb1b74.css.map": "/Mon_Portfolio/static/css/main.a3bb1b74.css.map",
+    "main.caab01a8.js.map": "/Mon_Portfolio/static/js/main.caab01a8.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a685450.css",
-    "static/js/main.32672923.js"
+    "static/css/main.a3bb1b74.css",
+    "static/js/main.caab01a8.js"
   ]
 }
