@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.240bf0e9.css",
+    "main.css": "/static/css/main.89b152bd.css",
     "main.js": "/static/js/main.cb3ca60b.js",
     "static/media/papyrus.jpg": "/static/media/papyrus.ebc5c73fe1416ec0fab2.jpg",
     "static/media/24616726.webp": "/static/media/24616726.eb60176785a6e573c2bf.webp",
@@ -10,11 +10,11 @@
     "static/media/carte-didentite.webp": "/static/media/carte-didentite.c36f70e5623aca912879.webp",
     "static/media/linkedin.webp": "/static/media/linkedin.dbdd6319439e4f8433a6.webp",
     "index.html": "/index.html",
-    "main.240bf0e9.css.map": "/static/css/main.240bf0e9.css.map",
+    "main.89b152bd.css.map": "/static/css/main.89b152bd.css.map",
     "main.cb3ca60b.js.map": "/static/js/main.cb3ca60b.js.map"
   },
   "entrypoints": [
-    "static/css/main.240bf0e9.css",
+    "static/css/main.89b152bd.css",
     "static/js/main.cb3ca60b.js"
   ]
 }
