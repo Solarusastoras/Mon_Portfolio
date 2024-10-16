@@ -1,17 +1,39 @@
 .title_error {
   animation: jump 0.5s ease-in-out infinite;
-  font-size: 15em;
-  margin-top: 50px;
+  font-size: 12em;
+  margin-top: 80px;
 }
 
 .errorpage-link, .text_eror {
-  display: flex;
+   display: inline-flex;
   justify-content: center;
-  margin-top: 40px;
+    margin-top: 40px;
   font-size: 1.5em;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .text_eror {
-  font-size: 15em;
+  font-size: 3em;
   font-weight: bold;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.colonne_texterror_lien {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 320px) and (max-width: 767.9px) {
+  .title_error {
+    font-size: 4em;
+  }
+  .text_eror {
+    font-size: 1em;
+  }
+  .errorpage-link {
+    font-size: 1em;
+  }
 }
