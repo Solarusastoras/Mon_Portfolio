@@ -9,7 +9,6 @@ function Footer() {
     <footer>
       <div>© 2024 Michael Dulou</div>
       <div>Téléphone : 06 48 71 37 27</div>
-      <div>mail : micformweb@gmail.com</div>
       <div>
         <a
           href="https://www.linkedin.com/in/michaeldulou/"
