@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import projets from "../../Data/Projets.json";
 import "./_projets.scss";
 import "../../Utils/SASS/base/_colors.scss";
+import "../../Utils/SASS/outils/_mixins.scss";
 
 const Projets = () => {
   const [clickedProjet, setClickedProjet] = useState(null);

@@ -52,7 +52,7 @@ header {
 }
 
 // Page A propos
-.home-link, h1, .text_eror, .errorpage-link {
+.home-link, h1, .text_eror, .errorpage-link{
   background-color: $fifth-color;
   color: $secondary-color;
 }
@@ -64,8 +64,8 @@ header {
   color: $secondary-color;
 }
 
-.filtres button.active,
-.filtres button:hover {
+.filtres button.active,.card-title,
+.filtres button:hover, .title_portfolio, .conteneur-formulaire h3 {
   background-color: $secondary-color;
   color: $fifth-color;
 }
@@ -126,6 +126,3 @@ footer a:hover {
   background-color: $base-color;
 }
 
-.card-title {
-  color: $secondary-color;
-}

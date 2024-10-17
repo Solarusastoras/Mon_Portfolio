@@ -1,9 +1,25 @@
+// Variables
+$border-color: #0000008a;
+$font-size-large: 3.5rem;
+$font-size-medium: 2.5rem;
+$font-size-small: 1.8rem;
+$font-size-xsmall: 1.1rem;
+$padding: 10px;
+$margin-bottom: 30px;
+$background-image: url("../../Utils/Images/Img/papyrus.jpg");
+$border-radius: 15px;
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+$button-padding: 10px 20px;
+$button-font-size: 1.1rem;
+$grid-gap: 25px;
+
 .title_portfolio {
   text-align: center;
-  margin: 50px;
+  margin-bottom: $margin-bottom;
   z-index: 7;
   display: inline-block;
-  font-size: 3.5rem;
+  font-size: $font-size-large;
+  padding: $padding;
 }
 
 .conteneur-titre {
@@ -16,14 +32,14 @@
 }
 
 .conteneur-portfolio {
-  border: 5px solid #0000008a;
-  border-radius: 15px;
+  border: 5px solid $border-color;
+  border-radius: $border-radius;
   padding: 5%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: $box-shadow;
   margin-bottom: 60px;
   box-sizing: border-box;
   width: 80%;
-  background-image: url("../../Utils/Images/Img/papyrus.jpg");
+  background-image: $background-image;
   background-size: cover;
 }
 
@@ -35,27 +51,26 @@
 
 .filtres button {
   margin: 0 10px;
-  padding: 10px 20px;
+  padding: $button-padding;
   border: none;
-  border-radius: 15px;
+  border-radius: $border-radius;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
-  font-size: 1.1rem;
-  margin-bottom: 30px;
+  font-size: $button-font-size;
+  margin-bottom: $margin-bottom;
 }
 
 .grid_projets {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
+  gap: $grid-gap;
   margin-left: 0px;
 }
 
-
-// Tablette
+// Media Queries
 @media (min-width: 768px) and (max-width: 1023.9px) {
   .title_portfolio {
-    font-size: 2.5rem;
+    font-size: $font-size-medium;
   }
   
   .grid_projets {
@@ -63,25 +78,31 @@
   }
 
   .filtres button {
-   font-size: 1rem;}
+    font-size: $font-size-xsmall;
+  }
+
+  .conteneur-portfolio {
+    background-size: contain;
+  }
 }
 
-
-
-
-// Mobile
 @media (min-width: 320px) and (max-width: 767.9px) {
   .title_portfolio {
-    font-size: 1.8rem;
-    margin: 20px;
+    font-size: $font-size-small;
+    margin-top: 15px;
+    margin-bottom: 0px;
   }
   
   .grid_projets {
-       grid-template-columns: repeat(1, 1fr);
-       margin-left: 1%;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 1%;
   }
 
   .filtres button {
     display: none;
+  }
+
+  .conteneur-portfolio {
+    background-size: contain;
   }
 }

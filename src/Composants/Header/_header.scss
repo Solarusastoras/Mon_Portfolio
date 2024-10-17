@@ -1,16 +1,27 @@
+// Variables
+$shadow-color: rgba(0, 0, 0, 0.1);
+$font-size-large: 4rem;
+$font-size-medium: 2.5rem;
+$font-size-small: 1.5rem;
+$font-size-xsmall: 1.4rem;
+$header-height-large: 300px;
+$header-height-small: 200px;
+$img-size-large: 2.93rem;
+$img-size-medium: 2rem;
+$img-size-small: 30px;
+$margin-top-large: 15px;
+$margin-top-small: -15px;
+
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  height: 300px;
+  filter: drop-shadow(0px 3px 15px $shadow-color);
+  height: $header-height-large;
 }
 
 h2 {
-  font-size: 4.5em;
+  font-size: $font-size-large;
   text-transform: uppercase;
   text-align: center;
 }
@@ -38,14 +49,14 @@ nav {
 
 li {
   list-style: none;
-  margin-top: 15px;
+  margin-top: $margin-top-large;
   display: flex;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: $font-size-small;
 
   & img {
-    width: 2.93rem;
-    height: 2.95rem;
+    width: $img-size-large;
+    height: $img-size-large;
     margin-right: 10px;
   }
 }
@@ -54,54 +65,61 @@ li {
   cursor: pointer;
 }
 
+// Media Queries
 @media (min-width: 768px) and (max-width: 1023.9px) {
+  .header {
+    height: $header-height-small;
+  }
+
   h2 {
-    font-size: 2.5rem;
+    font-size: $font-size-medium;
     margin-top: -10px;
   }
 
   .identite_position {
     font-weight: 200;
-    font-size: 1.4rem;
+    font-size: $font-size-xsmall;
   }
 
   li {
-    font-size: 1rem;
+    font-size: $font-size-xsmall;
 
     & img {
-      width: 30px;
-      height: 30px;
+      width: $img-size-medium;
+      height: $img-size-medium;
     }
+  }
+
+  .header_nav {
+    margin-top: $margin-top-small;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767.9px) {
   .header {
-    height: 200px;
+    height: $header-height-small;
   }
 
   h2 {
-    font-size: 1.5rem;
-    margin-top: -10px;
+    font-size: $font-size-xsmall;
+    margin-top: 50px;
   }
 
   .identite_position {
-    position: absolute;
     top: 1%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     gap: 10px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 30px;
     font-weight: 200;
-    font-size: 1.4rem;
+    font-size: $font-size-xsmall;
   }
 
   .header_nav img {
-    width: 30px;
-    height: 30px;
-    margin: 0;
+    width: $img-size-small;
+    height: $img-size-small;
   }
 
   .header_nav li span {
@@ -109,13 +127,6 @@ li {
   }
 
   .header_nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 90px;
-    gap: 15px;
-
-    margin-left: -80%;
+    margin-top: $margin-top-small;
   }
 }
