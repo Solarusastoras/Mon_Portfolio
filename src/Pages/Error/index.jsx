@@ -16,7 +16,7 @@ const Error = () => {
         <div className="colonne_texterror_lien">
           <p className="text_eror">⛔ Page not Found ⛔</p>
           <Link to="/Mon_Portfolio" className="errorpage-link">
-            Retour au site
+            Retour à l'accueil
           </Link>
         </div>
       </div>
