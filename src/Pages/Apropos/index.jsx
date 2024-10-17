@@ -40,7 +40,7 @@ const Apropos = () => {
         </p>
       </div>
       <div className="apropos-lien">
-        <Link to="/" className="home-link">
+        <Link to="/Mon_portfolio" className="home-link">
           Retour à l'accueil
         </Link>
       </div>
