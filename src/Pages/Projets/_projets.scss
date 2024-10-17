@@ -247,24 +247,30 @@ body {
   .projet-cover {
     width: 90%;
     margin-left: 0;
+    margin: 0;
+    max-width: 100%;
   }
 
   .h3_projet {
     font-size: 1.5rem;
+    margin-right: 10px; 
   }
 
   .cards_projet {
     flex-direction: column;
     align-items: center;
-    width: 190%;
+    width: 100%;
     gap: 20px;
+    padding: 0 10px;
   }
 
   .projet-git {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    width: 180%;
+    padding: 0 10px;
+    width: 250px;
+    margin-bottom: -50px; 
   }
 
   .projet-description {
@@ -275,5 +281,18 @@ body {
     font-size: 0.8em;
     padding-left: 2rem;
     padding-right: 2rem;
+    margin-right: 10px;
+    margin-top: 30px;
+  }
+
+  .card_descrip,
+  .card_langage,
+  .card, .card_git {
+    width: 250px;
+    margin-bottom: 20px;
+  }
+
+  .projet-tag {
+    margin-top: 10px;
   }
 }
