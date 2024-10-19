@@ -45,6 +45,7 @@ $button-font-size: 2rem;
   margin-bottom: $margin-bottom;
   padding: $padding;
   margin-top: 30px;
+  border-radius: 10px;
 }
 
 .conteneur-formulaire p {
@@ -130,7 +131,7 @@ label {
   }
 
   .conteneur-formulaire h3 {
-    font-size: $font-size-xsmall;
+    font-size: $font-size-medium;
     margin-top: -5px;
     margin-bottom: 15px;
   }

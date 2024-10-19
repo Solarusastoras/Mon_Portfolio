@@ -32,7 +32,20 @@
   }
 }
 
-@mixin border-dot-animation {
+@mixin border-dot-animation($dot-color: antiquewhite, $dot-size: 10px) {
+  position: relative;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    width: $dot-size;
+    height: $dot-size;
+    border-radius: 50%;
+    background-color: $dot-color;
+    box-shadow: 0 0 10px $dot-color;
+    animation: border-dot-animation 9s linear infinite;
+  }
+  
   @keyframes border-dot-animation {
     0% {
       top: 0;
@@ -68,7 +81,11 @@ h2 {
 }
 
 // Portfolio
-.title_portfolio {
+.title_portfolio, .conteneur-formulaire h3 {
   @include jump-animation;
 }
 
+// Projets
+.projet-tag {
+  @include border-dot-animation(antiquewhite, 15px); 
+}

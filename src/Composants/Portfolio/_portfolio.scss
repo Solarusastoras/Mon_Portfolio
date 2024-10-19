@@ -2,7 +2,7 @@
 $border-color: #0000008a;
 $font-size-large: 3.5rem;
 $font-size-medium: 2.5rem;
-$font-size-small: 1.8rem;
+$font-size-small: 2rem;
 $font-size-xsmall: 1.1rem;
 $padding: 10px;
 $margin-bottom: 30px;
@@ -20,6 +20,7 @@ $grid-gap: 25px;
   display: inline-block;
   font-size: $font-size-large;
   padding: $padding;
+  border-radius: 10px;
 }
 
 .conteneur-titre {

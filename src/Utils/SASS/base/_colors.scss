@@ -1,7 +1,7 @@
 // Couleurs
 $base-color: #ffffff;
 $secondary-color: #000000;
-$third-color: #da911d;
+$third-color: #e59b23;
 $fourth-color: #102eb2e2;
 $fifth-color: antiquewhite;
 $error-color: #c72828;
@@ -12,11 +12,7 @@ h1 {
   color: $secondary-color;
 }
 
-nav,
-footer,
-header a,
-header {
-  color: $base-color;
+header a {
   text-decoration: none;
 }
 
@@ -25,8 +21,7 @@ header {
 .card_descrip,
 .card_langage,
 .cards,
-.card_git,
-.projet-git-button {
+.card_git {
   background-color: $base-color;
 }
 
@@ -39,20 +34,16 @@ header {
   color: $base-color;
 }
 
-.projet-tag::after {
-  background-color: $third-color;
+.projet-tag::after, .projet-git-button {
+  background-color: $fifth-color;
 }
 
-.projet-git-button:hover {
-  color: $base-color;
-}
-
-.projet-git-button:active {
-  background-color: $base-color;
+.projet-git-button:active, .projet-tag {
+  background-color: $secondary-color;
 }
 
 // Page A propos
-.home-link, h1, .text_eror, .errorpage-link{
+.home-link, h1, .text_eror, .errorpage-link {
   background-color: $fifth-color;
   color: $secondary-color;
 }
@@ -64,8 +55,8 @@ header {
   color: $secondary-color;
 }
 
-.filtres button.active,.card-title,
-.filtres button:hover, .title_portfolio, .conteneur-formulaire h3 {
+.filtres button.active,.card-title, .projet-git-button:hover,
+.filtres button:hover, .title_portfolio, .conteneur-formulaire h3, .h3_projet, .card_descrip h3, .card_langage h3 {
   background-color: $secondary-color;
   color: $fifth-color;
 }
@@ -107,17 +98,13 @@ header {
 
 // Footer et Header
 footer,
-header {
+header, nav, nav a {
   background-color: $secondary-color;
   color: $fifth-color;
 }
 
 // Footer
-footer a {
-  color: $third-color;
-}
-
-footer a:hover {
+footer a, footer a:hover  {
   color: $third-color;
 }
 
@@ -125,4 +112,3 @@ footer a:hover {
 .card {
   background-color: $base-color;
 }
-

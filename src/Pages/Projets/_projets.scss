@@ -1,5 +1,5 @@
 // Variables
-$border-color: #ddd;
+$border-color: #000000;
 $border-radius: 10px;
 $box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 $box-shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -12,10 +12,14 @@ $padding: 20px;
 $margin-bottom: 50px;
 $background-image: url("../../Utils/Images/Img/papyrus.jpg");
 $button-padding: 10px 20px;
-$button-border-color: #acacac;
+$button-border-color: #000000;
 $button-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 $button-box-shadow-hover: 0 6px 8px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 $button-box-shadow-active: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08);
+$scrollbar-bg: antiquewhite;
+$scrollbar-thumb-bg: gold;
+$scrollbar-thumb-image: url("https://i.ibb.co/GTj7rQK/depositphotos-508402766-stock-illustration-ancient-egypt-vintage-seamless-pattern.webp"); 
+
 
 // Global Styles
 * {
@@ -38,8 +42,7 @@ body {
 .projet-description {
   text-align: left;
   font-size: $font-size-small;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0;
   line-height: 1.5;
 }
 
@@ -76,13 +79,24 @@ body {
 }
 
 .card_descrip,
-.card_langage {
-  border: 1px solid $border-color;
+.card_langage, .card_git {
+  display: inline-block;
+  border: 3px solid $border-color;
   border-radius: $border-radius;
   padding: $padding;
   box-shadow: $box-shadow;
   text-align: center;
   width: 48%;
+  margin-top: 30px;
+}
+
+
+ 
+.h3_projet  {
+  text-align: center;
+  padding: 5px 10px; 
+  border-radius: $border-radius; 
+  margin-bottom: 20px;
 }
 
 .card_descrip {
@@ -93,10 +107,15 @@ body {
   font-weight: bold;
   font-size: 0.9em;
   line-height: 1.2;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  text-align: justify;
 }
+
+
+
+.card_descrip p {
+  text-align: left;
+  width: 95%;
+}
+
 
 .card_langage {
   background-image: $background-image;
@@ -117,12 +136,10 @@ body {
   align-items: center;
   justify-content: center;
   gap: 5px;
-  padding: 5px 10px;
-  border: 2px solid transparent;
+  padding: 10px 15px;
   border-radius: 5px;
   position: relative;
   overflow: hidden;
-  background-color: black;
   background-size: repeat;
   cursor: pointer;
 }
@@ -134,7 +151,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 2px solid orange;
+  border: 5px solid orange;
   border-radius: 5px;
   box-sizing: border-box;
 }
@@ -164,11 +181,10 @@ body {
   display: flex;
   justify-content: space-between;
   width: 80%;
-  margin-top: 20px;
 }
 
 .card_git {
-  border: 1px solid $border-color;
+  border: 3px solid $border-color;
   border-radius: $border-radius;
   padding: $padding;
   box-shadow: $box-shadow;
@@ -177,6 +193,8 @@ body {
   height: auto;
   transition: transform $transition-duration, box-shadow $transition-duration;
   background-image: $background-image;
+  display: flex;
+  flex-direction: column;
 }
 
 .card_git:hover {
@@ -187,14 +205,14 @@ body {
 .projet-git-button {
   display: inline-block;
   padding: $button-padding;
-  margin: 10px 0;
+  margin: 15px auto; 
   border: 2px solid $button-border-color;
-  border-radius: 5px;
-  text-align: center;
+  border-radius: 30px;
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.2s, box-shadow 0.2s;
   box-shadow: $button-box-shadow;
+  width: 30%;
 }
 
 .projet-git-button:hover {
@@ -207,10 +225,34 @@ body {
   box-shadow: $button-box-shadow-active;
 }
 
+
+
+// Custom Scrollbar
+::-webkit-scrollbar {
+  width: 30px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: $scrollbar-bg;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $scrollbar-thumb-bg;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-image: $scrollbar-thumb-image; 
+  background-size: cover; 
+}
+
+
+
 // Responsive Styles
 @media (min-width: 768px) and (max-width: 1023.9px) {
   .h3_projet {
     font-size: 1.7rem;
+    
   }
 
   .projet_ligne {
@@ -228,11 +270,28 @@ body {
     align-items: center;
   }
 
+  .card_descrip p {
+    font-size: 1.3rem;
+  }
+
   .card_descrip,
   .card_langage,
   .card {
     width: 90%;
     margin-bottom: 20px;
+  }
+
+  .card_descrip p {
+    text-align: left;
+    width: 100%;
+  }
+
+  .card_descrip h3 {
+    margin-top: 15px;
+  }
+
+  .projet-git-button {
+    width: 50%;
   }
 
   .projet-git {
@@ -246,15 +305,23 @@ body {
 @media (min-width: 320px) and (max-width: 767.9px) {
   .projet-cover {
     width: 90%;
-    margin-left: 0;
     margin: 0;
     max-width: 100%;
   }
 
-  .h3_projet {
-    font-size: 1.5rem;
-    margin-right: 10px; 
+  .card_descrip h3, .card_langage h3, .card_git h3 {
+   margin-left: 3%;
   }
+
+  .h3_projet {
+    font-size: 1.4rem;
+  }
+
+  .card_descrip p {
+    width: 120%;
+    margin-left: -8%;
+  }
+
 
   .cards_projet {
     flex-direction: column;
@@ -270,24 +337,32 @@ body {
     gap: 20px;
     padding: 0 10px;
     width: 250px;
-    margin-bottom: -50px; 
+    margin-bottom: -50px;
   }
 
   .projet-description {
     font-size: 1rem;
   }
 
+  .projet-git-button {
+    width: 50%;
+  }
+
   .card_descrip {
     font-size: 0.8em;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 0 2rem;
     margin-right: 10px;
     margin-top: 30px;
   }
 
+  .card_descrip h3 {
+    margin-top: 15px;
+  }
+
   .card_descrip,
   .card_langage,
-  .card, .card_git {
+  .card,
+  .card_git {
     width: 250px;
     margin-bottom: 20px;
   }
