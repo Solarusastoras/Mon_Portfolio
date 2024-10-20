@@ -4,6 +4,7 @@ $border-radius: 10px;
 $box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 $box-shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.2);
 $transition-duration: 0.3s;
+$font-size-xlarge: 5rem;
 $font-size-large: 3rem;
 $font-size-medium: 2rem;
 $font-size-small: 1.5rem;
@@ -58,7 +59,7 @@ body {
 
 .titre-projet {
   text-align: center;
-  font-size: $font-size-large;
+  font-size: $font-size-xlarge;
   margin-bottom: $margin-bottom;
   z-index: 7;
   width: 100%;
@@ -89,8 +90,6 @@ body {
   width: 48%;
   margin-top: 30px;
 }
-
-
  
 .h3_projet  {
   text-align: center;
@@ -108,8 +107,6 @@ body {
   font-size: 0.9em;
   line-height: 1.2;
 }
-
-
 
 .card_descrip p {
   text-align: left;
@@ -142,6 +139,7 @@ body {
   overflow: hidden;
   background-size: repeat;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 .projet-tag::before {
@@ -167,8 +165,8 @@ body {
 }
 
 .tag-logo {
-  width: 70px;
-  height: 70px;
+  width: 5rem;
+  height: 5rem;
   object-fit: contain;
 }
 
@@ -246,6 +244,13 @@ body {
   background-size: cover; 
 }
 
+@media (min-width: 1024px) and (max-width: 1233px) {
+  .tag-logo {
+  width: 3.2rem;
+  height: 3.2rem;
+  object-fit: cover;
+}
+}
 
 
 // Responsive Styles

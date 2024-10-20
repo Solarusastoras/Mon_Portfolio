@@ -123,16 +123,16 @@
         "definition": "JavaScript est un langage de programmation qui permet de créer du contenu dynamique sur des pages web."
       }
     ],
-    "github": "https://github.com/Solarusastoras/Projet_6.git",
-    "gitpage": "https://solarusastoras.github.io/Projet_6/"
+    "github": "https://github.com/Solarusastoras/Projet_6.git"
   },
+
   {
     "id": "7",
     "title": "Kasa",
     "cover": "https://i.ibb.co/48Kd23H/kasa.webp",
     "pictures": "https://i.ibb.co/48Kd23H/kasa.webp",
     "alt": "Kasa",
-    "description": "un site de location de logement. J'ai implémenté le front-end d’une application en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive. J'ai débuté le projet avec Create React App et l utilisation de Node.js",
+    "description": "Un site de location de logement. J'ai implémenté le front-end d’une application en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive. J'ai débuté le projet avec Create React App et l utilisation de Node.js",
     "type": "Site dynamique",
     "tags": [
       {
@@ -148,14 +148,14 @@
         "definition": "JavaScript est un langage de programmation qui permet de créer du contenu dynamique sur des pages web."
       },
       {
-      
+        "name": "APP",
         "logo": "https://i.ibb.co/7RMMhz6/react-2.webp",
         "alt": "Logo REACT",
         "definition": "React est une bibliothèque JavaScript pour construire des interfaces utilisateur."
       }
     ],
     "github": "https://github.com/Solarusastoras/Projet_7.git",
-    "gitpage": "https://solarusastoras.github.io/Projet_7/"
+    "gitpage": "https://Solarusastoras.github.io/Projet_7/"
   },
   {
     "id": "8",
@@ -174,7 +174,7 @@
       }
     ],
     "github": "https://github.com/Solarusastoras/Projet_8.git",
-    "gitPage": "https://solarusastoras.github.io/Projet_8/"
+    "gitpage": "https://Solarusastoras.github.io/Projet_8/"
   },
   {
     "id": "9",
@@ -191,12 +191,12 @@
         "alt": "Logo DEBUG"
       },
       {
+        "name": "APP",
         "logo": "https://i.ibb.co/7RMMhz6/react-2.webp",
         "alt": "Logo REACT",
         "definition": "React est une bibliothèque JavaScript pour construire des interfaces utilisateur."
       }
     ],
-    "github": "https://github.com/Solarusastoras/Projet_9.git",
-    "gitpage": "https://solarusastoras.github.io/Projet_9/"
+    "github": "https://github.com/Solarusastoras/Projet_9.git"
   }
 ]
