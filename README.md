@@ -12,12 +12,12 @@ La construction du site repose sur 4 priorités
 
 3) Facilité d utilisation
 
-Le site montre aux futurs utilisateurs des animations ( glow , jump, dot tournant dans le border de tags dans la page projet, changement du background au sur vol (hover) auc lick, changement du texte dans le bouton "retour à l accueuil" en hiéroglyphes, scrollbard differend dans projet )
+Le site montre aux futurs utilisateurs des animations (glow, jump, dot tournant dans le border de tags dans la page projet, changement du background au survol (hover) au clic, changement du texte dans le bouton "retour à l'accueil" en hiéroglyphes, scrollbar différente dans projet).
 
-Des ma formation de react j'ai su que j allais faire ce projet en react. Car pour moi ca regroupe mes prioritées fixées.
+Dès ma formation de React, j'ai su que j'allais faire ce projet en React. Car pour moi, cela regroupe mes priorités fixées.
 
-J ai voulu dans ce projet utiliser tous les compétences apprises durant la formation . 
+J'ai voulu dans ce projet utiliser toutes les compétences apprises durant la formation.
 
-Le site est hébergé sur GitPages. 
+Le site est hébergé sur GitPages.
 
-Un domaine est reservé sur ovh avec un hébergement où sera contenu le site.
+Un domaine est réservé sur OVH avec un hébergement où sera contenu le site.
