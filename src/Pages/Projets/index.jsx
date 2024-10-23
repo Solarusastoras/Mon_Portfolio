@@ -5,34 +5,25 @@ import "../../Utils/SASS/base/_colors.scss";
 import "../../Utils/SASS/outils/_mixins.scss";
 
 const Projets = () => {
-  // Déclare un état local pour stocker le projet cliqué
   const [clickedProjet, setClickedProjet] = useState(null);
 
-  // Utilise useEffect pour exécuter du code après le rendu du composant
   useEffect(() => {
-    // Récupère l'ID du projet cliqué depuis le localStorage
     const clickedId = localStorage.getItem("clickedId");
     console.log(`ID récupéré: ${clickedId}`);
 
-    // Vérifie si un ID a été récupéré
     if (clickedId) {
-      // Trouve le projet correspondant à l'ID récupéré
       const foundProjet = projets.find((projet) => projet.id === clickedId);
 
-      // Si le projet est trouvé, met à jour l'état local avec le projet trouvé
       if (foundProjet) {
         setClickedProjet(foundProjet);
       } else {
-        // Si le projet n'est pas trouvé, affiche une erreur dans la console
         console.error(`Projet avec l'ID ${clickedId} non trouvé.`);
       }
     } else {
-      // Si aucun ID n'est trouvé dans le localStorage, affiche une erreur dans la console
       console.error("Aucun ID cliqué trouvé dans localStorage.");
-    } // Le tableau vide signifie que cet effet s'exécute une seule fois après le premier rendu
-  }, []); 
+    }
+  }, []);
 
-  // Si aucun projet n'est cliqué, affiche un message de chargement
   if (!clickedProjet) {
     return <div>Chargement...</div>;
   }

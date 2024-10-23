@@ -34,31 +34,44 @@ function Header() {
 
       <nav>
         <ul className="header_nav">
-          <Link to="/Mon_Portfolio">
-            <li>
-              <img src={LogoAccueil} alt="Accueil" />
+          <li>
+            <Link to="/Mon_Portfolio">
+              <img src={LogoAccueil} alt="Logo Accueil" />
               <span>Accueil</span>
-            </li>
-          </Link>
+            </Link>
+          </li>
           <li
             className="pointer-cursor"
             onClick={() => scrollToSection("portfolio")}
+            tabIndex="0" // Rendre l'élément focusable
+            onKeyPress={(e) => {
+              if (e.key === "Enter") {
+                scrollToSection("portfolio");
+              }
+            }}
           >
-            <img src={LogoPortofolio} alt="Portfolio" />
+            <img src={LogoPortofolio} alt="Logo Portfolio" />
             <span>Portfolio</span>
           </li>
           <li
             className="pointer-cursor"
             onClick={() => scrollToSection("contact")}
+            tabIndex="0" // Rendre l'élément focusable
+            onKeyPress={(e) => {
+              if (e.key === "Enter") {
+                scrollToSection("contact");
+              }
+            }}
           >
-            <img src={LogoContact} alt="Contact" />
+            <img src={LogoContact} alt="Logo Contact" />
             <span>Contact</span>
           </li>
-          <Link to="/Apropos">
-            <li>
-              <img src={LogoAPropos} alt="Apropos" /> <span>A propos</span>
-            </li>
-          </Link>
+          <li>
+            <Link to="/Apropos">
+              <img src={LogoAPropos} alt="Logo A propos" />
+              <span>A propos</span>
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>

@@ -38,22 +38,23 @@ function Portfolio() {
       <div className="conteneur-titre">
         <h3 className="title_portfolio">PORTFOLIO</h3>
       </div>
-      <div className="filtres">
+      <ul className="filtres">
         {uniqueTypes.map((type) => (
-          <button
-            key={type}
-            className={activeFilter === type ? "active" : ""}
-            onClick={() => handleFilterChange(type)}
-          >
-            {type}
-          </button>
+          <li key={type}>
+            <button
+              className={activeFilter === type ? "active" : ""}
+              onClick={() => handleFilterChange(type)}
+            >
+              {type}
+            </button>
+          </li>
         ))}
-      </div>
+      </ul>
       <div className="grid_projets">
         {filteredProjects.map((project) => (
           <div key={project.id} onClick={() => handleProjectClick(project.id)}>
-              <Card project={project} />
-            </div>
+            <Card project={project} />
+          </div>
         ))}
       </div>
     </div>
