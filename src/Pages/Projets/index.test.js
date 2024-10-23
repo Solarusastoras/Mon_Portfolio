@@ -91,7 +91,7 @@ describe("When a page is created", () => {
 
   // Test pour vérifier que la description du site est affichée
   it("a description is displayed", async () => {
-    const description = await screen.findByText((content, element) => {
+    const description = await screen.findByText((content) => {
       return content.includes(
         "Site web d une association de Rider. Ce projet est une introduction aux fondamentaux du langage HTML et CSS. Ma tâche principale était de créer une nouvelle section sur la page web de l'association."
       );
