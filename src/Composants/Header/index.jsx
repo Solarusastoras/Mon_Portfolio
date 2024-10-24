@@ -37,18 +37,12 @@ function Header() {
           <li>
             <Link to="/Mon_Portfolio">
               <img src={LogoAccueil} alt="Logo Accueil" />
-              <span>Accueil</span>
+              <span className="up">Accueil</span>
             </Link>
           </li>
           <li
             className="pointer-cursor"
             onClick={() => scrollToSection("portfolio")}
-            tabIndex="0" // Rendre l'élément focusable
-            onKeyPress={(e) => {
-              if (e.key === "Enter") {
-                scrollToSection("portfolio");
-              }
-            }}
           >
             <img src={LogoPortofolio} alt="Logo Portfolio" />
             <span>Portfolio</span>
@@ -56,12 +50,6 @@ function Header() {
           <li
             className="pointer-cursor"
             onClick={() => scrollToSection("contact")}
-            tabIndex="0" // Rendre l'élément focusable
-            onKeyPress={(e) => {
-              if (e.key === "Enter") {
-                scrollToSection("contact");
-              }
-            }}
           >
             <img src={LogoContact} alt="Logo Contact" />
             <span>Contact</span>
@@ -69,7 +57,7 @@ function Header() {
           <li>
             <Link to="/Apropos">
               <img src={LogoAPropos} alt="Logo A propos" />
-              <span>A propos</span>
+              <span className="up - texte_ligne">A propos</span>
             </Link>
           </li>
         </ul>
