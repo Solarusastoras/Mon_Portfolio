@@ -1,3 +1,7 @@
+$error-color: #c72828;
+$success-color: #28a745;
+$base-color: #ffffff;
+
 // Mixins
 @mixin glow-animation($color: #bdc90f) {
   animation: glow 2s ease-in-out infinite alternate;
@@ -73,6 +77,23 @@
   }
 }
 
+@keyframes invalidEffect {
+  0% {
+    background: repeating-linear-gradient(
+      145deg,
+      $error-color,
+      $error-color 25px,
+      $base-color 20px,
+      $base-color 40px
+    );
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    background: $base-color;
+    box-shadow: none;
+  }
+}
+
 // Page Home
 h2 {
   line-height: 0.7em;
@@ -88,4 +109,9 @@ h2 {
 // Projets
 .projet-tag {
   @include border-dot-animation(antiquewhite, 15px); 
+}
+
+// Form
+.invalid {
+  animation: invalidEffect 5s forwards;
 }

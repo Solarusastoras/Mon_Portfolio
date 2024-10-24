@@ -85,17 +85,6 @@ header a {
   color: $success-color;
 }
 
-.invalid {
-  background: repeating-linear-gradient(
-    145deg,
-    $error-color,
-    $error-color 25px,
-    $base-color 20px,
-    $base-color 40px
-  );
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-}
-
 // Footer et Header
 footer,
 header, nav, nav a {
