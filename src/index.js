@@ -90,7 +90,7 @@ root.render(
           <Route path="/Mon_Portfolio" element={<Home />} />
           <Route path="/apropos" element={<Apropos />} />
           <Route path="/projets" element={<Projets />} />
-          <Route path="/*" element={<Error />} />
+          <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
       </Router>
