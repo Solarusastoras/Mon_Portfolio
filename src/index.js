@@ -15,7 +15,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <HelmetProvider>
-      <Router>
+      <Router basename="/Mon_Portfolio">
         <Helmet>
           <meta charSet="utf-8" />
           <link rel="icon" href="/favicon.ico" />
@@ -87,7 +87,7 @@ root.render(
         </Helmet>
         <Header />
         <Routes>
-          <Route path="/Mon_Portfolio" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/apropos" element={<Apropos />} />
           <Route path="/projets" element={<Projets />} />
           <Route path="*" element={<Error />} />
