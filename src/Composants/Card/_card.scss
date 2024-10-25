@@ -28,10 +28,17 @@
 }
 
 .card-image {
-  max-width: 85%;
-  height: 4rem;
+  max-width: 70%;
+  height: 3.9rem;
   border-radius: 10px;
   margin-top: 10px;
+  object-position: top;
+  object-fit: cover;
+}
+
+.card-cover {
+  object-position: top;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) and (max-width: 1023.9.9px) {
