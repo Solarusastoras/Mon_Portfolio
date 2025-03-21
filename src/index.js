@@ -23,7 +23,7 @@ root.render(
           <meta name="theme-color" content="#000000" />
           <meta
             name="description"
-            content="Michael Dulou, intégrateur Web basé à Lescar. Découvrez mon portfolio et mes projets."
+            content="Michael Dulou, intégrateur Web basé à Lescar. Découvrez mon portfolio et mes projets (sites)."
           />
           <meta
             name="keywords"
