@@ -198,5 +198,65 @@
       }
     ],
     "github": "https://github.com/Solarusastoras/Projet_9.git"
+  },
+  {
+    "id": "10",
+    "title": "Solarus Actus",
+    "cover": "https://i.ibb.co/p6BCnRxf/siteactus.webp",
+    "pictures": "https://i.ibb.co/p6BCnRxf/siteactus.webp",
+    "alt": "Site de Solarus Actus",
+    "description": "Mon site Solarus Actus. J'ai conçu et développé mon propre site en utilisant React, un serveur sur Debian et Appscript (sheet) afin d obetenir des actualités et de les lire rapidement. Ce site m a permis de construire mon serveur debian pour les appel api et rss qui s actualisent a des plage horraire differents . ",
+    "tags": [
+      {
+        "name": "SCSS",
+        "logo": "https://i.ibb.co/bJ2qgHf/sass.webp",
+        "alt": "Logo SCSS",
+        "definition": " SCSS est une extension de CSS qui ajoute des fonctionnalités comme les variables, les imbrications, les mixins et l'héritage."
+      },
+      {
+        "name": "Javascript",
+        "logo": "https://i.ibb.co/YjJbVtT/js.webp",
+        "alt": "Logo Javascript",
+        "definition": "JavaScript est un langage de programmation qui permet de créer du contenu dynamique sur des pages web."
+      },
+      {
+        "name": "APP",
+        "logo": "https://i.ibb.co/7RMMhz6/react-2.webp",
+        "alt": "Logo REACT",
+        "definition": "React est une bibliothèque JavaScript pour construire des interfaces utilisateur."
+      }
+    ],
+    "github": "none",
+    "gitpage": "https://solarusweb.ovh/actu/"
+  },
+  {
+    "id": "11",
+    "title": "Odysée du savoir",
+    "cover": "https://i.ibb.co/zTGB8PmH/odysee.webp",
+    "pictures": "https://i.ibb.co/zTGB8PmH/odysee.webp",
+    "alt": "Imagecdu site Odyssée du savoir",
+    "description": "Le site Odyssée est mon second site personnelle. J'ai conçu et développé Odyssée du savoir du cp â la troisiéme en utilisant React afin d aider les enfants dans leur parcours scolaire.  Le site contient 5 thèmes. Chaque thème contient des fiches de révision, des quizz et des jeux éducatifs pour rendre l'apprentissage amusant et interactif.",
+    "tags": [
+      {
+        "name": "SCSS",
+        "logo": "https://i.ibb.co/bJ2qgHf/sass.webp",
+        "alt": "Logo SCSS",
+        "definition": " SCSS est une extension de CSS qui ajoute des fonctionnalités comme les variables, les imbrications, les mixins et l'héritage."
+      },
+      {
+        "name": "Javascript",
+        "logo": "https://i.ibb.co/YjJbVtT/js.webp",
+        "alt": "Logo Javascript",
+        "definition": "JavaScript est un langage de programmation qui permet de créer du contenu dynamique sur des pages web."
+      },
+      {
+        "name": "APP",
+        "logo": "https://i.ibb.co/7RMMhz6/react-2.webp",
+        "alt": "Logo REACT",
+        "definition": "React est une bibliothèque JavaScript pour construire des interfaces utilisateur."
+      }
+    ],
+    "github": "none",
+    "gitpage": "https://solarusweb.ovh/"
   }
 ]

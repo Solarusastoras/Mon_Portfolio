@@ -7,9 +7,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import emailjs from "emailjs-com";
 import "./_form.scss";
-import "../../Utils/SASS/base/_colors.scss";
-import "../../Utils/SASS/base/_fonts.scss";
-import "../../Utils/SASS/outils/_mixins.scss";
 
 function Form() {
   const [formData, setFormData] = useState({ nom: "", email: "", message: "" });
@@ -19,6 +16,7 @@ function Form() {
     email: false,
     message: false,
   });
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     if (confirmation) {
@@ -50,19 +48,24 @@ function Form() {
     // Envoyer le formulaire via EmailJS
     emailjs
       .send(
-        "service_x0gm4rc",
+        "service_5urmzcq",
         "template_51z9t1e",
         formData,
         "MWPrmDFXWXcNg-YkH"
       )
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
-        setConfirmation("Votre message a été envoyé avec succès !");
+        setConfirmation("✅ Votre message a été envoyé avec succès !");
         setFormData({ nom: "", email: "", message: "" });
+        setTimeout(() => setIsModalOpen(false), 2000);
       })
       .catch((err) => {
         console.error("FAILED...", err);
-        setConfirmation("Une erreur s'est produite, veuillez réessayer.");
+        if (err.status === 412 || err.text?.includes("Invalid grant")) {
+          setConfirmation("⚠️ Service de messagerie temporairement indisponible. Veuillez me contacter via LinkedIn.");
+        } else {
+          setConfirmation("❌ Une erreur s'est produite. Veuillez réessayer ou me contacter via LinkedIn.");
+        }
       });
   };
 
@@ -75,18 +78,29 @@ function Form() {
   const isFormValid = formData.nom && formData.email && formData.message;
 
   return (
-    <div className="conteneur-formulaire">
-      <h3>CONTACT</h3>
-      <br />
-      <div className="cadre-texte">
-        <p>Une question ?</p>
-        <p>
-          N’hésitez pas à m’écrire !
-          <br />
-          Je vous répondrais en moins de 24 heures
-        </p>
+    <>
+      <div className="conteneur-formulaire">
+        <h3 className="contact-title">CONTACT</h3>
+        <br />
+        <div className="cadre-texte">
+          <p className="question-text">Une question ?</p>
+          <p className="description-text">
+            N'hésitez pas à m'écrire !
+            <br />
+            Je vous répondrais en moins de 24 heures
+          </p>
+        </div>
+        <button className="open-modal-btn" onClick={() => setIsModalOpen(true)}>
+          M'écrire
+        </button>
       </div>
-      <form onSubmit={handleSubmit}>
+
+      {isModalOpen && (
+        <div className="modal-overlay" onClick={() => setIsModalOpen(false)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={() => setIsModalOpen(false)}>✕</button>
+            <h3>CONTACT</h3>
+            <form onSubmit={handleSubmit}>
         <label htmlFor="nom">
           <FontAwesomeIcon icon={faUser} /> Nom
         </label>
@@ -138,7 +152,10 @@ function Form() {
           />
         </div>
       </form>
-    </div>
+          </div>
+        </div>
+      )}
+    </>
   );
 }
 

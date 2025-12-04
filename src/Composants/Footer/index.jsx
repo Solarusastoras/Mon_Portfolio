@@ -1,7 +1,5 @@
 import React from "react";
 import "./_footer.scss";
-import "../../Utils/SASS/base/_colors.scss";
-import "../../Utils/SASS/base/_fonts.scss";
 import LogoLinkedin from "../../Utils/Images/Logo/linkedin.webp";
 
 function Footer() {

@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../Utils/SASS/base/_colors.scss";
-import "../../Utils/SASS/base/_fonts.scss";
 import "./_header.scss";
 import LogoAccueil from "../../Utils/Images/Logo/accueil.webp";
 import LogoPortofolio from "../../Utils/Images/Logo/dossier-portfolio.webp";
@@ -18,49 +16,50 @@ function Header() {
 
   return (
     <header className="header">
-      <div className="identite_position">
-        MICHAEL
-        <br />
-        <br />
-        <span className="centered-text">DULOU</span>
+      <div className="header_center">
+        <div className="identite_position" data-text="MICHAEL DULOU">
+          MICHAEL DULOU
+        </div>
+        <h2 className="header_poste">
+          Intégrateur Web
+        </h2>
       </div>
 
-      <h2 className="header_poste">
-        Développeur
-        <br />
-        <br />
-        <span className="centered-text">Front-End</span>
-      </h2>
-
-      <nav>
-        <ul className="header_nav">
-          <li>
-            <Link to="/Mon_Portfolio">
-              <img src={LogoAccueil} alt="Logo Accueil" />
-              <span className="up">Accueil</span>
-            </Link>
-          </li>
-          <li
-            className="pointer-cursor"
-            onClick={() => scrollToSection("portfolio")}
-          >
-            <img src={LogoPortofolio} alt="Logo Portfolio" />
-            <span>Portfolio</span>
-          </li>
-          <li
-            className="pointer-cursor"
-            onClick={() => scrollToSection("contact")}
-          >
-            <img src={LogoContact} alt="Logo Contact" />
-            <span>Contact</span>
-          </li>
-          <li>
-            <Link to="/Apropos">
-              <img src={LogoAPropos} alt="Logo A propos" />
-              <span className="up - texte_ligne">A propos</span>
-            </Link>
-          </li>
-        </ul>
+      <nav className="header_navigation">
+        <div className="nav-left">
+          <ul className="header_nav">
+            <li className="nav-item nav-accueil">
+              <Link to="/">
+                <img src={LogoAccueil} alt="Logo Accueil" />
+                <span data-hieroglyph="𓉔𓅓𓏏">Accueil</span>
+              </Link>
+            </li>
+            <li className="nav-item nav-apropos">
+              <Link to="/a-propos">
+                <img src={LogoAPropos} alt="Logo A propos" />
+                <span className="texte_ligne" data-hieroglyph="𓂋𓎡𓏏">A propos</span>
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="nav-right">
+          <ul className="header_nav">
+            <li
+              className="nav-item nav-portfolio pointer-cursor"
+              onClick={() => scrollToSection("portfolio")}
+            >
+              <img src={LogoPortofolio} alt="Logo Portfolio" />
+              <span data-hieroglyph="𓂋𓏤𓄿𓏏">Portfolio</span>
+            </li>
+            <li
+              className="nav-item nav-contact pointer-cursor"
+              onClick={() => scrollToSection("contact")}
+            >
+              <img src={LogoContact} alt="Logo Contact" />
+              <span data-hieroglyph="𓌃𓂧𓏏">Contact</span>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
   );

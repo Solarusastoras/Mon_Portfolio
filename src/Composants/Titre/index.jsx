@@ -1,7 +1,5 @@
 import React from "react";
 import "./_titre.scss";
-import "../../Utils/SASS/base/_colors.scss";
-import "../../Utils/SASS/base/_fonts.scss";
 
 function Titre() {
   return (

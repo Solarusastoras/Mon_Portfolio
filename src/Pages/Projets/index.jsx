@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import projets from "../../Data/Projets.json";
 import "./_projets.scss";
-import "../../Utils/SASS/base/_colors.scss";
-import "../../Utils/SASS/outils/_mixins.scss";
 
 const Projets = () => {
   const [clickedProjet, setClickedProjet] = useState(null);
@@ -58,15 +56,17 @@ const Projets = () => {
         </div>
       </div>
       <div className="projet-git">
-        <div className="card_git">
-          <h3 className="h3_projet">Le code</h3>
-          <div
-            className="projet-git-button"
-            onClick={() => window.open(clickedProjet.github, "_blank")}
-          >
-            GitHub
+        {clickedProjet.github !== "none" && (
+          <div className="card_git">
+            <h3 className="h3_projet">Le code</h3>
+            <div
+              className="projet-git-button"
+              onClick={() => window.open(clickedProjet.github, "_blank")}
+            >
+             Voir le dépôt GitHub
+            </div>
           </div>
-        </div>
+        )}
         {clickedProjet.gitpage && (
           <div className="card_git">
             <h3 className="h3_projet">Le site</h3>
@@ -74,7 +74,7 @@ const Projets = () => {
               className="projet-git-button"
               onClick={() => window.open(clickedProjet.gitpage, "_blank")}
             >
-              GitPage
+              Cliquez pour voir le site
             </div>
           </div>
         )}

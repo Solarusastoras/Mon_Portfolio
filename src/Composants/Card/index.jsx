@@ -2,7 +2,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./_card.scss";
-import "../../Utils/SASS/base/_colors.scss";
 
 const Card = ({ project }) => {
   const navigate = useNavigate();

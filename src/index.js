@@ -15,7 +15,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <HelmetProvider>
-      <Router>
+      <Router basename="/portfolio">
         <Helmet>
           <meta charSet="utf-8" />
           <link rel="icon" href="/favicon.ico" />
@@ -40,10 +40,10 @@ root.render(
             property="og:description"
             content="Michael Dulou, intégrateur Web basé à Lescar. Découvrez mon portfolio et mes projets."
           />
-          <meta property="og:image" content="/og-image.jpg" />
+          <meta property="og:image" content="https://solarusweb.ovh/og-image.jpg" />
           <meta
             property="og:url"
-            content="https://solarusastoras.github.io/Mon_Portfolio/"
+            content="https://solarusweb.ovh/portfolio/"
           />
           <meta property="og:type" content="website" />
 
@@ -69,7 +69,7 @@ root.render(
                 "@context": "http://schema.org",
                 "@type": "WebSite",
                 "name": "Michael Dulou - Portfolio",
-                "url": "https://solarusastoras.github.io/Mon_Portfolio/",
+                "url": "https://solarusweb.ovh/portfolio/",
                 "description": "Michael Dulou, intégrateur Web basé à Lescar. Découvrez mon portfolio et mes projets.",
                 "author": {
                   "@type": "Person",
@@ -87,8 +87,8 @@ root.render(
         </Helmet>
         <Header />
         <Routes>
-          <Route path="/Mon_Portfolio" element={<Home />} />
-          <Route path="/apropos" element={<Apropos />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/a-propos" element={<Apropos />} />
           <Route path="/projets" element={<Projets />} />
           <Route path="*" element={<Error />} />
         </Routes>

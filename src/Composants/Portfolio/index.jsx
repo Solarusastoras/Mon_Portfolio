@@ -1,12 +1,7 @@
 import React, { useState } from "react";
 import "./_portfolio.scss";
-import "../../Utils/SASS/base/_colors.scss";
-import "../../Utils/SASS/base/_fonts.scss";
 import projets from "../../Data/Projets.json";
 import Card from "../../Composants/Card";
-import "../../Utils/SASS/base/_colors.scss";
-import "../../Utils/SASS/outils/_mixins.scss";
-
 
 function Portfolio() {
   const [filteredProjects, setFilteredProjects] = useState(projets);

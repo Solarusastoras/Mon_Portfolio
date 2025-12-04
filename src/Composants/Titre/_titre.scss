@@ -1,15 +1,82 @@
 h1 {
     display: flex;
     justify-content: center;
-    margin-top: 3.5vh;
-    margin-bottom: 3vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     font-size: 5rem;
+    font-weight: 900;
+    letter-spacing: 10px;
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(
+      135deg,
+      #c9a858 0%,
+      #e8c989 20%,
+      #f4d6a8 40%,
+      #e8c989 60%,
+      #c9a858 80%,
+      #a68545 100%
+    );
+    background-size: 300% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: royalShine 5s ease-in-out infinite;
+    filter: drop-shadow(0 6px 20px rgba(201, 168, 88, 0.6));
+    
+    &::before {
+      content: '';
+      position: absolute;
+      inset: -30px;
+      background: radial-gradient(
+        ellipse at center,
+        rgba(201, 168, 88, 0.2),
+        transparent 70%
+      );
+      filter: blur(40px);
+      z-index: -1;
+      animation: pulse 4s ease-in-out infinite;
+    }
+    
+    &::after {
+      content: '';
+      position: absolute;
+      inset: -20px;
+      background: 
+        linear-gradient(
+          90deg,
+          transparent,
+          rgba(201, 168, 88, 0.1),
+          transparent
+        );
+      animation: sweep 4s ease-in-out infinite;
+      will-change: transform;
+    }
+}
+
+@keyframes royalShine {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes sweep {
+  0%, 100% { transform: translateX(-100%); opacity: 0; }
+  50% { transform: translateX(100%); opacity: 1; }
 }
 
 @media (min-width: 320px) and (max-width: 767.9px) {
     h1 {
-        font-size: 3.5rem;
+        font-size: 2.2rem;
         font-weight: bold;
-        
+        letter-spacing: 5px;
     }
 }

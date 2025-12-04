@@ -1,9 +1,50 @@
 footer {
-  padding: 20px;
+  padding: 40px 20px;
   text-align: center;
-  border-top: 2px solid #d4af37;
-  margin-top: 50px;
+  margin-top: 80px;
   font-size: 1.2rem;
+  position: relative;
+  background: rgba(26, 26, 46, 0.8);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(201, 168, 88, 0.3);
+  box-shadow: 
+    0 -8px 32px rgba(0, 0, 0, 0.4),
+    0 0 60px rgba(201, 168, 88, 0.15),
+    inset 0 1px 0 rgba(201, 168, 88, 0.2);
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      #c9a858,
+      #e8c989,
+      #c9a858,
+      transparent
+    );
+    animation: shimmer 3s ease-in-out infinite;
+  }
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: radial-gradient(
+      circle at 50% 0%,
+      rgba(201, 168, 88, 0.1),
+      transparent 50%
+    );
+    pointer-events: none;
+  }
 }
 
 footer div {
@@ -12,9 +53,34 @@ footer div {
 
 footer a {
   text-decoration: none;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  transition: var(--transition);
+  padding: 8px 16px;
+  border-radius: 12px;
+  position: relative;
+  
+  &:hover {
+    transform: translateY(-3px);
+    color: #e8c989;
+    text-shadow: 0 0 15px rgba(201, 168, 88, 0.8);
+    background: rgba(201, 168, 88, 0.15);
+    box-shadow: 
+      0 4px 16px rgba(201, 168, 88, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    
+    img {
+      filter: 
+        drop-shadow(0 0 12px rgba(201, 168, 88, 1))
+        drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+      transform: rotate(-5deg);
+    }
+  }
+  
+  img {
+    transition: var(--transition);
+  }
 }
 
 footer img {
