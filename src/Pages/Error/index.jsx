@@ -1,12 +1,10 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./_error.scss";
-
+import "./error.scss";
 const Error = () => {
   useEffect(() => {
     document.title = "Error | Not Found";
   }, []);
-
   return (
     <div>
       <div>
@@ -21,5 +19,4 @@ const Error = () => {
     </div>
   );
 };
-
 export default Error;

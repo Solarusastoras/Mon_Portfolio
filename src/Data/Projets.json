@@ -2,21 +2,21 @@
   {
     "id": "2",
     "title": "Riding Cities",
-    "cover": " https://i.ibb.co/f2FNk0v/riding-cities.webp",
-    "pictures": "https://i.ibb.co/f2FNk0v/riding-cities.webp",
+    "cover": "/Images/Sites/riding_cities.webp",
+    "pictures": "/Images/Sites/riding_cities.webp",
     "description": "Site web d une association de Rider. Ce projet est une introduction aux fondamentaux du langage HTML et CSS. Ma tâche principale était de créer une nouvelle section sur la page web de l'association.   ",
     "alt": "Riding Cities",
     "type": "Site statique",
     "tags": [
       {
         "name": "HTML",
-        "logo": "https://i.ibb.co/rfLQKqD/html-5-2-2.webp",
+        "logo": "/Images/Logo/html.webp",
         "alt": "Logo HTML",
         "definition": "HTML (HyperText Markup Language) est le langage de balisage standard utilisé pour créer des pages web."
       },
       {
         "name": "CSS",
-        "logo": "https://i.ibb.co/n6KYNK2/css-3.webp",
+        "logo": "/Images/Logo/css-3.webp",
         "alt": "Logo CSS",
         "definition": "CSS (Cascading Style Sheets) est un langage de feuille de style utilisé pour décrire la présentation d'un document écrit en HTML ou XML."
       }
@@ -28,8 +28,8 @@
   {
     "id": "3",
     "title": "Booki",
-    "cover": "https://i.ibb.co/0fxP3N4/booki.webp",
-    "pictures": "https://i.ibb.co/0fxP3N4/booki.webp",
+    "cover": "/Images/Sites/booki.webp",
+    "pictures": "/Images/Sites/booki.webp",
     "alt": "Booki",
     "description": "Site web d'hebergement. Ma mission principale était d'intégrer l'interface responsive de leur site. J'avais à disposition les maquettes Figma pour mobile, tablette et desktop, ainsi que les images et une note de synthèse sur les spécificités du projet. J'ai créé mes propres composants d'interface avec HTML et CSS afin d'avoir un rendu correspondant à la maquette.",
 
@@ -38,13 +38,13 @@
     "tags": [
       {
         "name": "HTML",
-        "logo": "https://i.ibb.co/rfLQKqD/html-5-2-2.webp",
+        "logo": "/Images/Logo/html.webp",
         "alt": "Logo HTML",
         "definition": "HTML (HyperText Markup Language) est le langage de balisage standard utilisé pour créer des pages web."
       },
       {
         "name": "CSS",
-        "logo": "https://i.ibb.co/n6KYNK2/css-3.webp",
+        "logo": "/Images/Logo/css-3.webp",
         "alt": "Logo CSS",
         "definition": "CSS (Cascading Style Sheets) est un langage de feuille de style utilisé pour décrire la présentation d'un document écrit en HTML ou XML."
       }
@@ -55,8 +55,8 @@
   {
     "id": "4",
     "title": "ohmyfood",
-    "cover": "https://i.ibb.co/JjRtfYv/ohmyfood.webp",
-    "pictures": "https://i.ibb.co/JjRtfYv/ohmyfood.webp",
+    "cover": "/Images/Sites/ohmyfood.webp",
+    "pictures": "/Images/Sites/ohmyfood.webp",
     "alt": "ohmyfood",
     "description": "Site web livraison de repas. Ce projet J'ai été amène à travailler sur l'interface mobile-first du site d’une start-up. J'ai utilisé Sass, implémenté des animations CSS et versionné votre projet avec Git et GitHub.",
 
@@ -64,13 +64,13 @@
     "tags": [
       {
         "name": "HTML",
-        "logo": "https://i.ibb.co/rfLQKqD/html-5-2-2.webp",
+        "logo": "/Images/Logo/html.webp",
         "alt": "Logo HTML",
         "definition": "HTML (HyperText Markup Language) est le langage de balisage standard utilisé pour créer des pages web."
       },
       {
         "name": "SCSS",
-        "logo": "https://i.ibb.co/bJ2qgHf/sass.webp",
+        "logo": "/Images/Logo/sass.webp",
         "alt": "Logo SCSS",
         "definition": " SCSS est une extension de CSS qui ajoute des fonctionnalités comme les variables, les imbrications, les mixins et l'héritage."
       }
@@ -81,15 +81,15 @@
   {
     "id": "5",
     "title": "Print-it",
-    "cover": "https://i.ibb.co/HdfZS4R/print-it.webp",
-    "pictures": "https://i.ibb.co/HdfZS4R/print-it.webp",
+    "cover": "/Images/Sites/print-it.webp",
+    "pictures": "/Images/Sites/print-it.webp",
     "alt": "Print-it",
     "description": "Site web d'impression. Ma tâche a consisté à mettre à jour le code HTML existant et à ajouter un carrousel en JavaScrip",
     "type": "Site statique",
     "tags": [
       {
         "name": "Javascript",
-        "logo": "https://i.ibb.co/YjJbVtT/js.webp",
+        "logo": "/Images/Logo/js.webp",
         "alt": "Logo Javascript"
       }
     ],
@@ -99,26 +99,26 @@
   {
     "id": "6",
     "title": "Sophie Bluel",
-    "cover": "https://i.ibb.co/XjwPg3D/sophie-Bluel.webp",
-    "pictures": "https://i.ibb.co/XjwPg3D/sophie-Bluel.webp",
+    "cover": "/Images/Sites/sophiebuel.webp",
+    "pictures": "/Images/Sites/sophiebuel.webp",
     "alt": "Sophie Bluel",
     "description": "Portfolio d'une architecte. Ce projet m'a engagé à créer une page web dynamique pour le site internet d'une architecte d'intérieur en utilisant JavaScript et en communiquant avec une API. J'ai créé également une page de connexion pour l'administrateur du site ainsi qu'une modale permettant d'uploader de nouveaux médias",
     "type": "Site dynamique",
     "tags": [
       {
         "name": "HTML",
-        "logo": "https://i.ibb.co/rfLQKqD/html-5-2-2.webp",
+        "logo": "/Images/Logo/html.webp",
         "alt": "Logo HTML",
         "definition": "HTML (HyperText Markup Language) est le langage de balisage standard utilisé pour créer des pages web."
       },
       {
         "name": "CSS",
-        "logo": "https://i.ibb.co/n6KYNK2/css-3.webp",
+        "logo": "/Images/Logo/css-3.webp",
         "alt": "Logo CSS"
       },
       {
         "name": "Javascript",
-        "logo": "https://i.ibb.co/YjJbVtT/js.webp",
+        "logo": "/Images/Logo/js.webp",
         "alt": "Logo Javascript",
         "definition": "JavaScript est un langage de programmation qui permet de créer du contenu dynamique sur des pages web."
       }
@@ -129,27 +129,27 @@
   {
     "id": "7",
     "title": "Kasa",
-    "cover": "https://i.ibb.co/48Kd23H/kasa.webp",
-    "pictures": "https://i.ibb.co/48Kd23H/kasa.webp",
+    "cover": "/Images/Sites/kasa.webp",
+    "pictures": "/Images/Sites/kasa.webp",
     "alt": "Kasa",
     "description": "Un site de location de logement. J'ai implémenté le front-end d’une application en utilisant React et React Router pour créer une expérience utilisateur moderne et réactive. J'ai débuté le projet avec Create React App et l utilisation de Node.js",
     "type": "Site dynamique",
     "tags": [
       {
         "name": "SCSS",
-        "logo": "https://i.ibb.co/bJ2qgHf/sass.webp",
+        "logo": "/Images/Logo/sass.webp",
         "alt": "Logo SCSS",
         "definition": " SCSS est une extension de CSS qui ajoute des fonctionnalités comme les variables, les imbrications, les mixins et l'héritage."
       },
       {
         "name": "Javascript",
-        "logo": "https://i.ibb.co/YjJbVtT/js.webp",
+        "logo": "/Images/Logo/js.webp",
         "alt": "Logo Javascript",
         "definition": "JavaScript est un langage de programmation qui permet de créer du contenu dynamique sur des pages web."
       },
       {
         "name": "APP",
-        "logo": "https://i.ibb.co/7RMMhz6/react-2.webp",
+        "logo": "/Images/Logo/react-2.webp",
         "alt": "Logo REACT",
         "definition": "React est une bibliothèque JavaScript pour construire des interfaces utilisateur."
       }
@@ -160,15 +160,15 @@
   {
     "id": "8",
     "title": "Nina Carducci",
-    "cover": "https://i.ibb.co/9qZ34gD/nina-carducci.webp",
-    "pictures": "https://i.ibb.co/9qZ34gD/nina-carducci.webp",
+    "cover": "/Images/Sites/nina_carducci.webp",
+    "pictures": "/Images/Sites/nina_carducci.webp",
     "alt": "Nina Carducci",
     "description": "Le site de Photographe. J'ai optimisé le référencement d’un site, en améliorant sa performance et son accessibilité.",
     "type": "SEO",
     "tags": [
       {
         "name": "SEO",
-        "logo": "https://i.ibb.co/JtBffpZ/seo.webp",
+        "logo": "/Images/Logo/seo.webp",
         "alt": "Logo SEO",
         "definition": "SEO (Search Engine Optimization) est le processus d'optimisation d'un site web pour améliorer son classement dans les résultats des moteurs de recherche."
       }
@@ -179,20 +179,20 @@
   {
     "id": "9",
     "title": "724 events",
-    "cover": "https://i.ibb.co/xYR9hR2/724events.webp",
-    "pictures": "https://i.ibb.co/xYR9hR2/724events.webp",
+    "cover": "/Images/Sites/eevents.webp",
+    "pictures": "/Images/Sites/eevents.webp",
     "alt": "724 events",
     "description": "Site dorganisation d'evenement. Dans ce projet, J'ai débuggé et finalisé le développement d'un site one-page.",
     "type": "Debug",
     "tags": [
       {
         "name": "DEBUG",
-        "logo": "https://i.ibb.co/H2CVQRb/probleme-de-bogue.webp",
+        "logo": "/Images/Logo/probleme-de-bogue.webp",
         "alt": "Logo DEBUG"
       },
       {
         "name": "APP",
-        "logo": "https://i.ibb.co/7RMMhz6/react-2.webp",
+        "logo": "/Images/Logo/react-2.webp",
         "alt": "Logo REACT",
         "definition": "React est une bibliothèque JavaScript pour construire des interfaces utilisateur."
       }
@@ -202,60 +202,62 @@
   {
     "id": "10",
     "title": "Solarus Actus",
-    "cover": "https://i.ibb.co/p6BCnRxf/siteactus.webp",
-    "pictures": "https://i.ibb.co/p6BCnRxf/siteactus.webp",
+    "cover": "/Images/Sites/siteactus.webp",
+    "pictures": "/Images/Sites/siteactus.webp",
     "alt": "Site de Solarus Actus",
     "description": "Mon site Solarus Actus. J'ai conçu et développé mon propre site en utilisant React, un serveur sur Debian et Appscript (sheet) afin d obetenir des actualités et de les lire rapidement. Ce site m a permis de construire mon serveur debian pour les appel api et rss qui s actualisent a des plage horraire differents . ",
     "tags": [
       {
         "name": "SCSS",
-        "logo": "https://i.ibb.co/bJ2qgHf/sass.webp",
+        "logo": "/Images/Logo/sass.webp",
         "alt": "Logo SCSS",
         "definition": " SCSS est une extension de CSS qui ajoute des fonctionnalités comme les variables, les imbrications, les mixins et l'héritage."
       },
       {
         "name": "Javascript",
-        "logo": "https://i.ibb.co/YjJbVtT/js.webp",
+        "logo": "/Images/Logo/js.webp",
         "alt": "Logo Javascript",
         "definition": "JavaScript est un langage de programmation qui permet de créer du contenu dynamique sur des pages web."
       },
       {
         "name": "APP",
-        "logo": "https://i.ibb.co/7RMMhz6/react-2.webp",
+        "logo": "/Images/Logo/react-2.webp",
         "alt": "Logo REACT",
         "definition": "React est une bibliothèque JavaScript pour construire des interfaces utilisateur."
       }
     ],
+    "type": "Site dynamique",
     "github": "none",
     "gitpage": "https://solarusweb.ovh/actu/"
   },
   {
     "id": "11",
     "title": "Odysée du savoir",
-    "cover": "https://i.ibb.co/zTGB8PmH/odysee.webp",
-    "pictures": "https://i.ibb.co/zTGB8PmH/odysee.webp",
+    "cover": "/Images/Sites/odysee.webp",
+    "pictures": "/Images/Sites/odysee.webp",
     "alt": "Imagecdu site Odyssée du savoir",
     "description": "Le site Odyssée est mon second site personnelle. J'ai conçu et développé Odyssée du savoir du cp â la troisiéme en utilisant React afin d aider les enfants dans leur parcours scolaire.  Le site contient 5 thèmes. Chaque thème contient des fiches de révision, des quizz et des jeux éducatifs pour rendre l'apprentissage amusant et interactif.",
     "tags": [
       {
         "name": "SCSS",
-        "logo": "https://i.ibb.co/bJ2qgHf/sass.webp",
+        "logo": "/Images/Logo/sass.webp",
         "alt": "Logo SCSS",
         "definition": " SCSS est une extension de CSS qui ajoute des fonctionnalités comme les variables, les imbrications, les mixins et l'héritage."
       },
       {
         "name": "Javascript",
-        "logo": "https://i.ibb.co/YjJbVtT/js.webp",
+        "logo": "/Images/Logo/js.webp",
         "alt": "Logo Javascript",
         "definition": "JavaScript est un langage de programmation qui permet de créer du contenu dynamique sur des pages web."
       },
       {
         "name": "APP",
-        "logo": "https://i.ibb.co/7RMMhz6/react-2.webp",
+        "logo": "/Images/Logo/react-2.webp",
         "alt": "Logo REACT",
         "definition": "React est une bibliothèque JavaScript pour construire des interfaces utilisateur."
       }
     ],
+    "type": "Site dynamique",
     "github": "none",
     "gitpage": "https://solarusweb.ovh/"
   }

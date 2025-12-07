@@ -3,7 +3,6 @@ import Form from "../../Composants/Form";
 import Portfolio from "../../Composants/Portfolio";
 import Titre from "../../Composants/Titre";
 import "./_home.scss";
-
 function Home() {
   return (
     <div>
@@ -17,5 +16,4 @@ function Home() {
     </div>
   );
 }
-
 export default Home;

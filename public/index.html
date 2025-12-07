@@ -3,8 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- Performance optimizations -->
+    <meta name="format-detection" content="telephone=no" />
+    
+
+    
     <meta
       name="description"
       content="Michael Dulou, intégrateur Web basé à Lescar. Découvrez mon portfolio et mes projets."
@@ -15,21 +21,20 @@
     />
     <meta name="google-site-verification" content="sso7VIoJAC2I2JijQ3ngCGe8P-g_pw-GLJ7XiKX43pk" />
 
-    <!-- Preconnect to external resources -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/static/css/main.css" as="style" />
     
-    <!-- Google Fonts with display=swap and async loading -->
+    <!-- Google Fonts - Cinzel & Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link 
-      rel="preload" 
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Egyptian+Hieroglyphs&display=swap"
-      onload="this.onload=null;this.rel='stylesheet'"
+      rel="stylesheet" 
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Lato:wght@300;400;700&display=swap"
+      media="print" 
+      onload="this.media='all'"
     />
     <noscript>
-      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Egyptian+Hieroglyphs&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
     </noscript>
 
     <!-- Open Graph Meta Tags -->

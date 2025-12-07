@@ -1,11 +1,10 @@
 import React from "react";
-import "./_footer.scss";
+import "./footer.scss";
 import LogoLinkedin from "../../Utils/Images/Logo/linkedin.webp";
-
 function Footer() {
   return (
     <footer>
-      <div>© 2024 Michael Dulou</div>
+      <div>© 2024 Solarus</div>
       <div>
         <a
           href="https://www.linkedin.com/in/michaeldulou/"
@@ -19,5 +18,4 @@ function Footer() {
     </footer>
   );
 }
-
 export default Footer;

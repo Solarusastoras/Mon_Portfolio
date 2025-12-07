@@ -1,31 +1,24 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./_apropos.scss";
-
+import "./apropos.scss";
 const Apropos = () => {
   useEffect(() => {
     const homeLink = document.querySelector(".home-link");
     const originalText = homeLink.textContent;
     const hieroglyphText = "𓄒 𓅱 𓅃 𓃭 𓅃 𓅱 𓄒  𓃭";
-
     const handleMouseOver = () => {
       homeLink.textContent = hieroglyphText;
     };
-
     const handleMouseOut = () => {
       homeLink.textContent = originalText;
     };
-
     homeLink.addEventListener("mouseover", handleMouseOver);
     homeLink.addEventListener("mouseout", handleMouseOut);
-
-    // Cleanup function to remove event listeners
     return () => {
       homeLink.removeEventListener("mouseover", handleMouseOver);
       homeLink.removeEventListener("mouseout", handleMouseOut);
     };
   }, []);
-
   return (
     <div className="apropos-container">
       <h1 className="apropos-title">À PROPOS</h1>
@@ -46,5 +39,4 @@ const Apropos = () => {
     </div>
   );
 };
-
 export default Apropos;

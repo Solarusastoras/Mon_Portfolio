@@ -6,8 +6,7 @@ import {
   faComment,
 } from "@fortawesome/free-solid-svg-icons";
 import emailjs from "emailjs-com";
-import "./_form.scss";
-
+import "./form.scss";
 function Form() {
   const [formData, setFormData] = useState({ nom: "", email: "", message: "" });
   const [confirmation, setConfirmation] = useState("");
@@ -17,14 +16,12 @@ function Form() {
     message: false,
   });
   const [isModalOpen, setIsModalOpen] = useState(false);
-
   useEffect(() => {
     if (confirmation) {
       const timer = setTimeout(() => setConfirmation(""), 10000);
       return () => clearTimeout(timer);
     }
   }, [confirmation]);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -33,9 +30,7 @@ function Form() {
       email: !formData.email || !emailRegex.test(formData.email),
       message: !formData.message,
     };
-
     setInvalidFields(newInvalidFields);
-
     if (Object.values(newInvalidFields).some((field) => field)) {
       alert("🔴 Merci de remplir tous les champs 🔴");
       setTimeout(
@@ -44,8 +39,6 @@ function Form() {
       );
       return;
     }
-
-    // Envoyer le formulaire via EmailJS
     emailjs
       .send(
         "service_5urmzcq",
@@ -68,15 +61,12 @@ function Form() {
         }
       });
   };
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
     setInvalidFields((prev) => ({ ...prev, [name]: !value }));
   };
-
   const isFormValid = formData.nom && formData.email && formData.message;
-
   return (
     <>
       <div className="conteneur-formulaire">
@@ -94,69 +84,75 @@ function Form() {
           M'écrire
         </button>
       </div>
-
       {isModalOpen && (
         <div className="modal-overlay" onClick={() => setIsModalOpen(false)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="modal-close" onClick={() => setIsModalOpen(false)}>✕</button>
+            <button 
+              className="modal-close" 
+              onClick={() => setIsModalOpen(false)}
+              aria-label="Fermer la modale"
+            >
+              ✕
+            </button>
             <h3>CONTACT</h3>
             <form onSubmit={handleSubmit}>
-        <label htmlFor="nom">
-          <FontAwesomeIcon icon={faUser} /> Nom
-        </label>
-        <input
-          type="text"
-          name="nom"
-          id="nom"
-          autoComplete="name"
-          value={formData.nom}
-          onChange={handleInputChange}
-          className={invalidFields.nom ? "invalid" : ""}
-        />
-
-        <label htmlFor="email">
-          <FontAwesomeIcon icon={faEnvelope} /> Email
-        </label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          autoComplete="email"
-          value={formData.email}
-          onChange={handleInputChange}
-          className={invalidFields.email ? "invalid" : ""}
-        />
-
-        <label htmlFor="message">
-          <FontAwesomeIcon icon={faComment} /> Message
-        </label>
-        <textarea
-          name="message"
-          id="message"
-          cols="30"
-          rows="10"
-          autoComplete="off"
-          value={formData.message}
-          onChange={handleInputChange}
-          className={invalidFields.message ? "invalid" : ""}
-        ></textarea>
-
-        {confirmation && <p className="confirmation-message">{confirmation}</p>}
-
-        <div className="submit-container">
-          <input
-            type="submit"
-            aria-label="Envoyer le formulaire"
-            value="Envoyer"
-            className={isFormValid ? "valid-submit" : ""}
-          />
-        </div>
-      </form>
+              <label htmlFor="nom">
+                <FontAwesomeIcon icon={faUser} /> Nom
+              </label>
+              <input
+                type="text"
+                name="nom"
+                id="nom"
+                autoComplete="name"
+                placeholder="Votre nom"
+                value={formData.nom}
+                onChange={handleInputChange}
+                className={invalidFields.nom ? "invalid" : ""}
+              />
+              <label htmlFor="email">
+                <FontAwesomeIcon icon={faEnvelope} /> Email
+              </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autoComplete="email"
+                placeholder="votre.email@exemple.com"
+                value={formData.email}
+                onChange={handleInputChange}
+                className={invalidFields.email ? "invalid" : ""}
+              />
+              <label htmlFor="message">
+                <FontAwesomeIcon icon={faComment} /> Message
+              </label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                autoComplete="off"
+                placeholder="Votre message..."
+                value={formData.message}
+                onChange={handleInputChange}
+                className={invalidFields.message ? "invalid" : ""}
+              ></textarea>
+              {confirmation && (
+                <p className="confirmation-message">{confirmation}</p>
+              )}
+              <div className="submit-container">
+                <input
+                  type="submit"
+                  aria-label="Envoyer le formulaire"
+                  value="Envoyer"
+                  className={isFormValid ? "valid-submit" : ""}
+                  disabled={!isFormValid}
+                />
+              </div>
+            </form>
           </div>
         </div>
       )}
     </>
   );
 }
-
 export default Form;

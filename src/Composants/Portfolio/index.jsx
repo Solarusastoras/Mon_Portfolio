@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-import "./_portfolio.scss";
+import "./portfolio.scss";
 import projets from "../../Data/Projets.json";
 import Card from "../../Composants/Card";
-
 function Portfolio() {
   const [filteredProjects, setFilteredProjects] = useState(projets);
   const [activeFilter, setActiveFilter] = useState("Tous");
-
   const handleFilterChange = (filter) => {
     setActiveFilter(filter);
     if (filter === "Tous") {
@@ -15,11 +13,9 @@ function Portfolio() {
       setFilteredProjects(projets.filter((project) => project.type === filter));
     }
   };
-
   const handleProjectClick = (id) => {
     localStorage.setItem("selectedProjectId", id);
   };
-
   const uniqueTypes = [
     "Tous",
     "Site statique",
@@ -27,11 +23,10 @@ function Portfolio() {
     "SEO",
     "Debug",
   ];
-
   return (
     <div className="conteneur-portfolio">
       <div className="conteneur-titre">
-        <h3 className="title_portfolio">PORTFOLIO</h3>
+        <h2 className="title_portfolio">PORTFOLIO</h2>
       </div>
       <ul className="filtres">
         {uniqueTypes.map((type) => (
@@ -55,5 +50,4 @@ function Portfolio() {
     </div>
   );
 }
-
 export default Portfolio;

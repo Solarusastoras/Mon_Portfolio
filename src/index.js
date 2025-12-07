@@ -9,6 +9,7 @@ import Apropos from "./Pages/Apropos";
 import Projets from "./Pages/Projets";
 import Error from "./Pages/Error";
 import "./Utils/SASS/index.scss";
+import "./index.scss";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
