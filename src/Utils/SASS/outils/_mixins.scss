@@ -1,1 +1,209 @@
-$error-color:#c72828;$success-color:#28a745;$base-color:#ffffff;@mixin glow-animation($color:#bdc90f){animation:glow 2s ease-in-out infinite alternate;@keyframes glow{0%{color:#ffff;text-shadow:0 0 5px $color,0 0 10px $color,0 0 15px $color;}100%{color:#ffff;text-shadow:0 0 5px $color,0 0 10px $color,0 0 15px $color,0 0 20px $color;}}}@mixin jump-animation{animation:jump 0.5s ease-in-out infinite;@keyframes jump{0%,100%{transform:translateY(0);}50%{transform:translateY(-1px);}}}@mixin border-dot-animation($dot-color:antiquewhite,$dot-size:10px){position:relative;&::after{content:"";position:absolute;width:$dot-size;height:$dot-size;border-radius:50%;background-color:$dot-color;box-shadow:0 0 10px $dot-color;animation:border-dot-animation 9s linear infinite;}@keyframes border-dot-animation{0%{top:0;left:0;}25%{top:0;left:100%;transform:translateX(-100%);}50%{top:100%;left:100%;transform:translate(-100%,-100%);}75%{top:100%;left:0;transform:translateY(-100%);}100%{top:0;left:0;}}}@keyframes invalidEffect{0%{background:repeating-linear-gradient( 145deg,$error-color,$error-color 25px,$base-color 20px,$base-color 40px );box-shadow:3px 3px 5px rgba(0,0,0,0.2);}100%{background:$base-color;box-shadow:none;}}h2{line-height:0.7em;outline:none;@include glow-animation;}.title_portfolio,.conteneur-formulaire h3{@include jump-animation;}.projet-tag{@include border-dot-animation(antiquewhite,15px);}.invalid{animation:invalidEffect 5s forwards;}
+// ═══════════════════════════════════════════
+// MIXINS — Portfolio Michael Dulou (modernisé)
+// ═══════════════════════════════════════════
+
+// ── Palette dorée ───────────────────────────
+$gold-dark:    #8a6c1f;
+$gold-medium:  #c9a858;
+$gold:         #d4af37;
+$gold-light:   #ffd700;
+$gold-bright:  #ffed4e;
+
+$bg-base:      #050505;
+$bg-surface:   #0e0a04;
+$bg-card:      rgba(18, 14, 8, 0.92);
+
+$text-primary: #e8d5a3;
+$text-dim:     #9a7d45;
+$text-dark:    #1a1a2e;
+
+// ── Dégradé doré animé ──────────────────────
+@mixin gold-text {
+  background: linear-gradient(
+    135deg,
+    $gold-dark   0%,
+    $gold-medium 20%,
+    $gold-light  50%,
+    $gold-medium 80%,
+    $gold-dark   100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: goldSweep 4s linear infinite;
+}
+
+@keyframes goldSweep {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+// ── Bordure dorée lumineuse ──────────────────
+@mixin gold-border($opacity: 0.3) {
+  border: 1px solid rgba(201, 168, 88, $opacity);
+}
+
+@mixin gold-glow-border {
+  border: 1px solid rgba(201, 168, 88, 0.4);
+  box-shadow:
+    0 0 0 1px rgba(201, 168, 88, 0.1) inset,
+    0 8px 32px rgba(0, 0, 0, 0.5),
+    0 0 40px rgba(201, 168, 88, 0.08);
+}
+
+// ── Surface de carte ────────────────────────
+@mixin card-surface {
+  background: $bg-card;
+  border-radius: 14px;
+  @include gold-glow-border;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+// ── Hover élévation ─────────────────────────
+@mixin card-hover {
+  &:hover {
+    border-color: rgba(201, 168, 88, 0.6);
+    transform: translateY(-5px) scale(1.02);
+    box-shadow:
+      0 24px 48px rgba(0, 0, 0, 0.7),
+      0 0 40px rgba(201, 168, 88, 0.15);
+  }
+}
+
+// ── Bouton doré ─────────────────────────────
+@mixin gold-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 32px;
+  border-radius: 24px;
+  border: 1px solid $gold-medium;
+  background: transparent;
+  color: $gold-light;
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: rgba(201, 168, 88, 0.15);
+    border-color: $gold-light;
+    color: $gold-bright;
+    box-shadow: 0 0 20px rgba(201, 168, 88, 0.2);
+    transform: translateY(-2px);
+  }
+
+  &:active { transform: translateY(0); }
+}
+
+// ── Bouton CTA rempli ───────────────────────
+@mixin gold-button-filled {
+  @include gold-button;
+  background: linear-gradient(135deg, $gold-dark, $gold-medium, $gold-light, $gold-medium, $gold-dark);
+  background-size: 200% auto;
+  color: $bg-base;
+  border: none;
+  font-weight: 900;
+  box-shadow:
+    0 8px 24px rgba(201, 168, 88, 0.4),
+    inset 0 2px 4px rgba(255,255,255,0.25),
+    inset 0 -2px 4px rgba(80,50,0,0.4);
+
+  &:hover {
+    background-position: right center;
+    box-shadow:
+      0 12px 32px rgba(201, 168, 88, 0.6),
+      inset 0 2px 6px rgba(255,255,255,0.3);
+    color: $bg-base;
+    transform: translateY(-3px);
+  }
+}
+
+// ── Divider hiéroglyphique ───────────────────
+@mixin gold-divider($glyph: '𓂀') {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    $gold-medium,
+    $gold-light,
+    $gold-medium,
+    transparent
+  );
+  position: relative;
+  margin: 24px 0;
+
+  &::after {
+    content: $glyph;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: $gold-medium;
+    background: $bg-base;
+    padding: 0 10px;
+  }
+}
+
+// ── Animations d'entrée ─────────────────────
+@mixin fade-in-up($delay: 0s) {
+  animation: fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) $delay both;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0)   scale(1); }
+}
+
+// ── Pulsation hiéroglyphe ────────────────────
+@mixin glyph-pulse {
+  animation: glyphPulse 3s ease-in-out infinite;
+  @keyframes glyphPulse {
+    0%, 100% { opacity: 0.3; }
+    50%       { opacity: 0.65; }
+  }
+}
+
+// ── Fond grille animée ───────────────────────
+@mixin animated-grid {
+  background-image:
+    linear-gradient(rgba(201,168,88,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201,168,88,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: gridDrift 20s linear infinite;
+  @keyframes gridDrift {
+    0%   { transform: translateY(0); }
+    100% { transform: translateY(60px); }
+  }
+}
+
+// ── Scrollbar ────────────────────────────────
+@mixin gold-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: $gold-medium rgba(10,10,10,0.5);
+
+  &::-webkit-scrollbar { width: 6px; }
+  &::-webkit-scrollbar-track { background: rgba(10,10,10,0.5); border-radius: 10px; }
+  &::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, $gold-dark, $gold-medium, $gold-light, $gold-medium, $gold-dark);
+    border-radius: 10px;
+    &:hover { background: linear-gradient(135deg, $gold-medium, $gold-bright, $gold-medium); }
+  }
+}
+
+// ── Responsive breakpoints ───────────────────
+$bp-mobile:  767.9px;
+$bp-tablet:  1023.9px;
+
+@mixin mobile  { @media (max-width: $bp-mobile)  { @content; } }
+@mixin tablet  { @media (min-width: 768px) and (max-width: $bp-tablet) { @content; } }
+@mixin desktop { @media (min-width: 1024px) { @content; } }

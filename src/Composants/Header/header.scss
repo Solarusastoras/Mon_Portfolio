@@ -1,1 +1,157 @@
-$shadow-color:rgb(0,0,0);$font-size-large:4rem;$font-size-medium:2.5rem;$font-size-small:1.5rem;$font-size-xsmall:1.4rem;$header-height-large:300px;$header-height-small:200px;$img-size-large:2.93rem;$img-size-medium:2rem;$img-size-small:30px;$margin-top-large:15px;$margin-top-small:-15px;.header{display:flex;flex-direction:column;justify-content:flex-start;align-items:center;height:auto;padding:0;top:0;left:0;right:0;width:100%;max-width:100vw;z-index:1000;position:relative;overflow:hidden;background:#000000;border-bottom:3px solid #c9a858;}h2{font-family:'Cinzel',serif;font-size:$font-size-large;text-transform:uppercase;text-align:center;letter-spacing:10px;font-weight:900;text-shadow:0 2px 10px rgba(0,0,0,0.5);background:linear-gradient( 135deg,#d4af37 0%,#f4d03f 25%,#ffd700 50%,#f4d03f 75%,#d4af37 100% );-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 4px 12px rgba(201,168,88,0.6));position:relative;z-index:1;}.header_center{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;z-index:1;padding:30px 0;background:#000000;}.identite_position{font-family:'Cinzel',serif;margin:0;font-size:2.4em;font-weight:900;letter-spacing:5px;background:linear-gradient(135deg,#b8860b 0%,#d4af37 15%,#f4d03f 30%,#ffd700 50%,#f4d03f 70%,#d4af37 85%,#b8860b 100%);box-shadow:inset 0 2px 4px rgba(255,255,255,0.4),inset 0 -2px 4px rgba(139,101,8,0.6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 3px 12px rgba(201,168,88,0.7));cursor:default;white-space:nowrap;margin-bottom:10px;}.header_poste{font-family:'Lato',sans-serif;margin:0;font-size:1.8rem;white-space:nowrap;}.centered-text{display:block;text-align:center;}.texte_ligne{white-space:nowrap;}.header_navigation{display:flex;width:100%;justify-content:center;background:#000000;border-bottom:2px solid #c9a858;padding:0;}.header_nav{display:flex;flex-direction:row;gap:0;list-style:none;padding:0;margin:0;}li{font-family:'Lato',sans-serif;list-style:none;display:flex;align-items:center;justify-content:center;font-size:1.1rem;padding:15px 30px;cursor:pointer;position:relative;background:transparent;border:none;border-bottom:3px solid transparent;transition:all 0.3s ease;&:hover{border-bottom-color:#c9a858;}&:active{border-bottom-color:#e8c989;}& span{font-family:'Lato',sans-serif;font-weight:600;letter-spacing:1px;font-size:1.1rem;text-align:center;color:#c9a858;text-transform:uppercase;}& a{display:flex;align-items:center;text-decoration:none;color:inherit;}}.pointer-cursor{cursor:pointer;}@media (min-width:768px) and (max-width:1023.9px){.header_poste{font-size:1.4rem;}.identite_position{font-size:1.8rem;}.header_center{padding:25px 0;}li{padding:12px 20px;& span{font-size:0.95rem;}}}@media (min-width:320px) and (max-width:767.9px){.header_center{width:100%;text-align:center;padding:20px 0;}.header_navigation{width:100%;}.header_poste{font-size:0.9rem;}.identite_position{font-size:1.1rem;letter-spacing:2px;}.header_nav{flex-wrap:wrap;justify-content:center;}li{padding:10px 15px;& span{font-size:0.8rem;}}}
+@import '../../Utils/SASS/outils/mixins';
+
+// ══════════════════════════════
+// HEADER
+// ══════════════════════════════
+
+.header {
+  position: relative;
+  width: 100%;
+  background: $bg-base;
+  overflow: hidden;
+  z-index: 1000;
+
+  // Grille animée en fond
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    @include animated-grid;
+    pointer-events: none;
+    z-index: 0;
+  }
+}
+
+// ── Navigation ──────────────────────────────
+.header_navigation {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(201, 168, 88, 0.2);
+}
+
+.header_nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0;
+}
+
+li.nav-item {
+  font-family: 'Lato', sans-serif;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 14px 28px;
+  cursor: pointer;
+  position: relative;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+
+  &:hover, &.active {
+    border-bottom-color: $gold-light;
+
+    span, a { color: $gold-bright; }
+  }
+
+  span, a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: $gold-medium;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+  }
+
+  @include mobile {
+    padding: 10px 14px;
+    span, a { font-size: 9px; letter-spacing: 1.5px; }
+  }
+}
+
+.pointer-cursor { cursor: pointer; }
+
+// ── Identité centrale ───────────────────────
+.header_center {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px 20px 24px;
+  gap: 6px;
+}
+
+.identite_position {
+  font-family: 'Cinzel', serif;
+  font-weight: 900;
+  font-size: clamp(1.4rem, 4vw, 2.6rem);
+  letter-spacing: 8px;
+  cursor: default;
+  white-space: nowrap;
+  @include gold-text;
+
+  @include mobile {
+    letter-spacing: 4px;
+  }
+}
+
+.header_poste {
+  font-family: 'Lato', sans-serif;
+  font-size: clamp(0.75rem, 2vw, 1rem);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: $text-dim;
+  margin: 0;
+  font-weight: 300;
+
+  @include mobile {
+    letter-spacing: 2px;
+  }
+}
+
+// Hiéroglyphes décoratifs
+.header_hieroglyphs {
+  font-size: 16px;
+  letter-spacing: 6px;
+  color: rgba(201, 168, 88, 0.3);
+  @include glyph-pulse;
+}
+
+// Séparateur bas de header
+.header_divider {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    $gold-medium,
+    $gold-light,
+    $gold-medium,
+    transparent
+  );
+}
+
+// ── Responsive ──────────────────────────────
+@include tablet {
+  .identite_position { font-size: 1.9rem; letter-spacing: 5px; }
+  .header_poste { font-size: 0.85rem; }
+  li.nav-item { padding: 12px 20px; }
+}
+
+@include mobile {
+  .header_nav { flex-wrap: wrap; justify-content: center; }
+  .header_center { padding: 20px 16px; }
+}

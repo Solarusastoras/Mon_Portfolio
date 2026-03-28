@@ -74,6 +74,8 @@ function Form() {
         <br />
         <div className="cadre-texte">
           <p className="question-text">Une question ?</p>
+          <p className="question-text">Un site à faire ?</p>
+          <p className="question-text">Un devis ?</p>
           <p className="description-text">
             N'hésitez pas à m'écrire !
             <br />
